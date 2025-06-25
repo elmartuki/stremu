@@ -13,7 +13,8 @@ p {
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1;
   background-color: #0f0f0fe0;
@@ -34,7 +35,7 @@ span.navbar-toggler-icon {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .video {
   width: 90%;
@@ -156,5 +157,21 @@ aside {
     display: flex;
     justify-content: end;
     margin: 0px 20px 0px 0px;
+  }
+
+  /* ASIDE */
+
+  main {
+    display: flex;
+    justify-content: end;
+  }
+
+  aside {
+    display: flex;
+    position: fixed;
+    width: 20%;
+    left: 0;
+    height: 100%;
+    padding: 70px 0px 0px 0px;
   }
 }
