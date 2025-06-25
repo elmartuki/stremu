@@ -1,17 +1,15 @@
-<<<<<<< index-header
 * {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.852);
 }
-
 body {
   background-color: #0f0f0f !important;
 }
 
-p{
-    margin: 0px !important;
+p {
+  margin: 0px !important;
 }
 
 header {
@@ -20,7 +18,6 @@ header {
   z-index: 1;
   background-color: #0f0f0fe0;
 }
-
 .perfil {
   .perfil-img {
     width: 40px;
@@ -29,24 +26,88 @@ header {
     border-radius: 100%;
   }
 }
-
 span.navbar-toggler-icon {
   filter: invert(1);
 }
+.cotenendor-videos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+.video {
+  width: 90%;
+  margin: 0px 0px 20px 0px;
+  .miniatura {
+    width: 100%;
+    position: relative;
+    p {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      background-color: #0f0f0fc3;
+      padding: 0px 8px;
+      border-radius: 8px;
+    }
+    .miniatura-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .video-descripcion {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    gap: 15px;
+    display: flex;
+    .canal {
+      img {
+        width: 50px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.titulo {
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+aside {
+  display: none;
+}
+.navbar-desk {
+  display: none;
+}
 
 @media (min-width: 1024px) {
+  main {
+    display: flex;
+  }
+  .cotenendor-videos {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .video {
+    width: 25vw;
+    margin: 0px 0px 0px 1%;
+  }
+
+  header {
+    z-index: 2;
+  }
 
   nav.navbar.navbar-expand-lg {
     display: none;
   }
-
   .navbar-desk {
     display: flex;
     height: 60px;
     justify-content: center;
     align-items: center;
   }
-
   .logo {
     width: 30%;
     font-size: 1.4rem;
@@ -55,30 +116,27 @@ span.navbar-toggler-icon {
     align-items: center;
     align-content: center;
   }
-
   .buscador-contenedor {
     width: 40%;
     display: flex;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 0.479);
     border-radius: 20px;
-
     .buscador {
       width: 92%;
       display: flex;
       justify-content: space-between;
     }
-
     input {
       width: 100%;
       background-color: #0f0f0f;
       padding: 6px 20px;
       border: none;
-      border-radius: 20px;
       color: white;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
   }
-
   .buscador-icon {
     width: 8%;
     display: flex;
@@ -93,7 +151,6 @@ span.navbar-toggler-icon {
       border-radius: 20px;
     }
   }
-
   .perfil {
     width: 30%;
     display: flex;
@@ -101,6 +158,3 @@ span.navbar-toggler-icon {
     margin: 0px 20px 0px 0px;
   }
 }
-=======
-
->>>>>>> dev
