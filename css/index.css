@@ -4,6 +4,9 @@
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.852);
 }
+
+/* BODY */
+
 body {
   background-color: #0f0f0f !important;
 }
@@ -11,6 +14,8 @@ body {
 p {
   margin: 0px !important;
 }
+
+/* NAVBAR */
 
 header {
   position: fixed;
@@ -27,16 +32,22 @@ header {
     border-radius: 100%;
   }
 }
+
 span.navbar-toggler-icon {
   filter: invert(1);
 }
+
+/* VIDEOS */
+
 .cotenendor-videos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   margin-top: 80px;
 }
+
 .video {
   width: 90%;
   margin: 0px 0px 20px 0px;
@@ -63,7 +74,7 @@ span.navbar-toggler-icon {
     display: flex;
     .canal {
       img {
-        width: 50px;
+        width: 40px;
         border-radius: 100%;
       }
     }
@@ -71,30 +82,48 @@ span.navbar-toggler-icon {
 }
 .titulo {
   h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 líneas/párrafos */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
+
+.estadisticas {
+  font-size: 0.8rem;
+}
+
+/* ASIDE */
+
 aside {
   display: none;
 }
+
 .navbar-desk {
-  display: none;
+  display: none; /* SE DEJA DE MOSTRAR LA BARRA DE NAVEGACION QUE ES PARA LA VERSION DE ESCRITORIO */
+}
+
+@media (min-width: 768px) {
+  .cotenendor-videos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .video {
+      width: 45vw;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
-  main {
-    display: flex;
+  /* No mostrar */
+  .show {
+    display: none;
   }
-  .cotenendor-videos {
-    width: 80%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .video {
-    width: 25vw;
-    margin: 0px 0px 0px 1%;
-  }
+
+  /* NAV-BAR PHONE */
 
   header {
     z-index: 2;
@@ -103,12 +132,16 @@ aside {
   nav.navbar.navbar-expand-lg {
     display: none;
   }
+
+  /* NAVBAR-ESCRITORIO */
+
   .navbar-desk {
     display: flex;
     height: 60px;
     justify-content: center;
     align-items: center;
   }
+
   .logo {
     width: 30%;
     font-size: 1.4rem;
@@ -117,6 +150,7 @@ aside {
     align-items: center;
     align-content: center;
   }
+
   .buscador-contenedor {
     width: 40%;
     display: flex;
@@ -152,6 +186,7 @@ aside {
       border-radius: 20px;
     }
   }
+
   .perfil {
     width: 30%;
     display: flex;
@@ -159,12 +194,25 @@ aside {
     margin: 0px 20px 0px 0px;
   }
 
-  /* ASIDE */
+  /* VIDEOS */
+  .cotenendor-videos {
+    width: 80%;
+    gap: 5px;
+
+    .video {
+      width: 25vw;
+      margin: 1% 0px 0px 1%;
+    }
+  }
+
+  /* MAIN */
 
   main {
     display: flex;
     justify-content: end;
   }
+
+  /* ASIDE */
 
   aside {
     display: flex;
@@ -173,5 +221,84 @@ aside {
     left: 0;
     height: 100%;
     padding: 70px 0px 0px 0px;
+  }
+
+  .accesos-rapidos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .accesos-1 {
+      display: flex;
+      width: 80%;
+      padding-left: 8px;
+      border-radius: 10px;
+      padding-left: 15px;
+      align-items: center;
+      justify-content: start;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        gap: 10px;
+      }
+    }
+  }
+
+  .selected {
+    background-color: rgb(33, 33, 33);
+  }
+
+  .icon {
+    filter: invert();
+  }
+
+  /* SEPARADOR */
+
+  .separador {
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.586);
+  }
+
+  /* Canales sugeridos */
+
+  .canal-segerido {
+    display: flex;
+    margin: 5px 30px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .canal-perfil {
+        width: 40px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  /* ASIDE */
+
+  aside {
+    width: 15%;
+  }
+
+  .accesos-rapidos {
+    .accesos-1 {
+      padding-left: 15px;
+    }
+  }
+
+  /* VIDEOS */
+  .cotenendor-videos {
+    width: 85%;
   }
 }
