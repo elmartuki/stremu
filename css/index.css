@@ -204,11 +204,89 @@ aside {
 
 @keyframes miniatura {
   0% {
-    opacity: 0%;
+    opacity: 50%;
   }
 
   100% {
     opacity: 100%;
+  }
+}
+
+/* CATEGORIAS DE VIDEOS */
+
+.titulo-seccion {
+  width: 100%;
+  padding: 0px 0px 0px 10px;
+
+  h1 {
+    display: flex;
+    font-weight: 1rem;
+    gap: 6px;
+
+    img {
+      width: 40px;
+      filter: invert();
+    }
+  }
+}
+
+/* VIDEOS CORTOS */
+
+.cortos-contenedor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px 0px 0px;
+  justify-content: center;
+  gap: 20px;
+
+  .cortos {
+    width: 44vw;
+  }
+
+  .cortos:nth-child(3) {
+    display: none;
+  }
+
+  .cortos:nth-child(4) {
+    display: none;
+  }
+
+  .cortos:nth-child(5) {
+    display: none;
+  }
+}
+
+.miniatura {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.cortos-des {
+  h4 {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 líneas/párrafos */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .canal {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+
+    .canal-imagen {
+      img {
+        width: 35px;
+        border-radius: 100%;
+      }
+    }
   }
 }
 
@@ -220,6 +298,15 @@ aside {
     gap: 20px;
     .video {
       width: 45vw;
+    }
+  }
+
+  .cortos-contenedor {
+    .cortos {
+      width: 30vw;
+    }
+    .cortos:nth-child(3) {
+      display: block;
     }
   }
 }
@@ -281,11 +368,26 @@ aside {
     }
   }
 
+  /* VIDEOS CORTOS */
+
+  .cortos-contenedor {
+    width: 80%;
+
+    .cortos {
+      width: 18vw;
+    }
+
+    .cortos:nth-child(4) {
+      display: block;
+    }
+  }
+
   /* MAIN */
 
   main {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: end;
   }
 
   /* ASIDE */
@@ -375,6 +477,22 @@ aside {
     /* VIDEOS */
     .contenendor-videos {
       width: 85%;
+    }
+
+    /* VIDEOS CORTOS */
+
+    .cortos-contenedor {
+      width: 85%;
+      display: flex;
+      justify-content: center;
+
+      .cortos {
+        width: 15vw;
+      }
+
+      .cortos:nth-child(5) {
+        display: block;
+      }
     }
   }
 }
