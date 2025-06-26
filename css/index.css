@@ -15,6 +15,15 @@ p {
   margin: 0px !important;
 }
 
+/* STREMU-LOGO */
+
+.stremu-logo {
+  width: 100px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0px 25px 0px 0px;
+}
+
 /* NAVBAR */
 
 header {
@@ -35,6 +44,74 @@ header {
 
 span.navbar-toggler-icon {
   filter: invert(1);
+}
+
+nav.navbar.navbar-expand-lg {
+  background: #0f0f0f;
+}
+
+/* ACCESOS RAPIDOS */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0px;
+
+  .link-1 {
+    p {
+      display: flex;
+      gap: 6px;
+      font-size: 1.2rem;
+    }
+    img {
+      gap: 50px;
+      filter: invert();
+    }
+  }
+}
+
+.separador {
+  border: 1px solid rgba(255, 255, 255, 0.464);
+}
+
+/* buscador */
+
+.buscador-contenedor {
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.479);
+  border-radius: 20px;
+  .buscador {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+  }
+  input {
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 6px 20px;
+    border: none;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+.buscador-icon {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 33, 33);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  img {
+    filter: invert();
+    border-radius: 20px;
+  }
 }
 
 /* VIDEOS */
@@ -176,45 +253,14 @@ aside {
     width: 30%;
     font-size: 1.4rem;
     display: flex;
-    justify-content: center;
+    padding: 0px 0px 0px 45px;
+    justify-content: start;
     align-items: center;
     align-content: center;
   }
 
   .buscador-contenedor {
     width: 40%;
-    display: flex;
-    justify-content: center;
-    border: 2px solid rgba(255, 255, 255, 0.479);
-    border-radius: 20px;
-    .buscador {
-      width: 92%;
-      display: flex;
-      justify-content: space-between;
-    }
-    input {
-      width: 100%;
-      background-color: #0f0f0f;
-      padding: 6px 20px;
-      border: none;
-      color: white;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-    }
-  }
-  .buscador-icon {
-    width: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(33, 33, 33);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: none;
-    img {
-      filter: invert();
-      border-radius: 20px;
-    }
   }
 
   .perfil {
