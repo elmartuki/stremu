@@ -11,6 +11,7 @@ body {
   width: 100%;
   display: flex;
   background-color: #0f0f0f !important;
+  overflow-x: hidden;
 }
 
 p {
@@ -112,6 +113,7 @@ nav.navbar.navbar-expand-lg {
   border: none;
   img {
     filter: invert();
+
     border-radius: 20px;
   }
 }
@@ -193,8 +195,18 @@ aside {
   display: none;
 }
 
+.vista-previa {
+  transition: 0.5s;
+}
+
+.vista-previa:hover {
+  box-shadow: -5px 5px 0px 1px #ff6200;
+  transform: translateY(-10px) translateX(10px);
+}
+
 .miniatura:hover :is(.vista-previa) {
   display: flex;
+  border-radius: 10px;
   video {
     width: 100%;
     border-radius: 10px;
@@ -205,7 +217,7 @@ aside {
 
 @keyframes miniatura {
   0% {
-    opacity: 50%;
+    opacity: 90%;
   }
 
   100% {
@@ -429,6 +441,7 @@ aside {
   }
 
   .icon {
+    width: 33px;
     filter: invert();
   }
 
