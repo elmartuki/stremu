@@ -5,6 +5,10 @@
   color: rgba(255, 255, 255, 0.852);
 }
 
+main {
+  margin: 60px 0px 0px 0px;
+}
+
 /* BODY */
 
 body {
@@ -118,6 +122,68 @@ nav.navbar.navbar-expand-lg {
   }
 }
 
+.promocion {
+  h1 {
+    animation: slidetext 80s linear infinite;
+  }
+}
+
+.titulo-seccion {
+  h1 {
+    animation: slidepromo 20s linear infinite;
+  }
+}
+
+/* TEXT SLIDER */
+.slider-text {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0px;
+
+  .titulo-seccion,
+  .promocion {
+    background-color: #ff6200;
+    width: 100vw;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    gap: 100px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      gap: 5px;
+      white-space: nowrap !important;
+
+      img {
+        filter: invert();
+        width: 60px;
+      }
+    }
+  }
+}
+
+
+@keyframes slidetext {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes slidepromo {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
 /* VIDEOS */
 
 .contenendor-videos {
@@ -125,7 +191,6 @@ nav.navbar.navbar-expand-lg {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin: 80px 0px 0px 0px;
 }
 
 .video {
@@ -195,29 +260,23 @@ aside {
   display: none;
 }
 
-.vista-previa {
-  transition: 0.5s;
-}
-
-.vista-previa:hover {
-  box-shadow: -5px 5px 0px 1px #ff6200;
-  transform: translateY(-10px) translateX(10px);
-}
-
 .miniatura:hover :is(.vista-previa) {
   display: flex;
-  border-radius: 10px;
+  box-shadow: -5px 5px 0px 1px #ff6200;
+  transform: translateY(-10px) translateX(10px);
+  border-radius: 5px;
   video {
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
     animation: miniatura 5s ease-in 1;
+    border-bottom-left-radius: 0px;
   }
 }
 
 @keyframes miniatura {
   0% {
-    opacity: 90%;
+    opacity: 50%;
   }
 
   100% {
@@ -393,7 +452,6 @@ aside {
   /* MAIN */
 
   main {
-    margin: 0px 0px 0px 0px;
     flex-direction: column;
     align-items: end;
   }
