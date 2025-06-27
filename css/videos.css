@@ -1,0 +1,106 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contenedor-principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.estadisticas-del-video {
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 4px 0px;
+}
+
+.video-contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .video {
+    width: 100%;
+
+    video {
+      width: 100%;
+    }
+  }
+}
+
+.info-del-video {
+  display: flex;
+  width: 100%;
+}
+
+.video-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+
+  img {
+    border-radius: 100%;
+    width: 40px;
+  }
+}
+
+.video-info-2 {
+  width: 60%;
+  .canal-nombre {
+    p {
+      display: flex;
+      gap: 2px;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.video-titulo {
+  font-size: 0.9rem;
+}
+
+.video-info-3 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estadisticas-del-video {
+  img {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(100%) saturate(642%)
+      hue-rotate(351deg) brightness(104%) contrast(101%);
+  }
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 70%;
+    border: none;
+    background-color: #ff6200;
+    border-radius: 5px;
+
+    img {
+      filter: invert();
+    }
+  }
+}
+
+.video {
+  margin: 0px;
+}
