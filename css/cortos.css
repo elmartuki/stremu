@@ -1,3 +1,327 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Video del corto */
+.corto-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.corto-video video {
+  width: 95%;
+  height: 84dvh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Botones de acciones sobre el video */
+.corto-video .botones {
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.corto-video .botones button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.corto-video .botones button img {
+  filter: invert();
+}
+
+/* Likes, comentarios y guardados */
+.likes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Información del corto (pie de video) */
+.info-de-este-corto {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+  display: flex;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.info-de-este-corto .canal-imagen {
+  width: 10%;
+  height: 100%;
+}
+
+.info-de-este-corto .canal-imagen img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.info-de-este-corto .corto-descripcion {
+  width: 70%;
+}
+
+.canal-nombre p img {
+  width: 20px;
+}
+
+.canal-titulo {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Imagen de portada de música */
+.corto-musica {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corto-musica img {
+  width: 40px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Título genérico */
+.titulo {
+  background-color: #212121;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Sección de cortos recomendados */
+.cortos-recomendados {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.cortos-recomendados .cortos {
+  width: 45dvw !important;
+}
+
+/* Panel de comentarios en escritorio */
+.info-comentarios-escritorio {
+  display: none;
+  width: 50vw;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .corto-video {
+    width: 50%;
+  }
+
+  .cortos-recomendados {
+    justify-content: center;
+  }
+
+  .cortos-recomendados .cortos {
+    width: 22vw !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Estructura principal */
+  .seccion-cortos {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .cortos-video-contenedor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  /* Item de corto en desktop */
+  .corto-item {
+    display: flex;
+    width: 100%;
+  }
+
+  .corto-video {
+    width: 40vw;
+  }
+
+  .corto-video video {
+    height: 90dvh;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+
+  /* Comentarios */
+  .info-comentarios-escritorio {
+    display: flex !important;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .info-de-este-corto-escritorio {
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+  }
+
+  .info-de-este-corto {
+    display: none;
+  }
+
+  .contenedor-info-comentarios {
+    width: 50%;
+    height: 100px;
+  }
+
+  .corto-musica {
+    display: none;
+  }
+
+  .canal {
+    gap: 25px !important;
+  }
+
+  .canal-imagen {
+    width: 15%;
+
+    img {
+      width: 40px;
+      border-radius: 100%;
+    }
+  }
+
+  .corto-descripcion {
+    width: 85%;
+  }
+
+  .comentarios-contenedor {
+    padding: 0 20px;
+  }
+
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .comentario .usuario-perfil {
+    background-color: #ff6200;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .comentario .usuario-perfil img {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .cortos-recomendados .cortos {
+    width: 17vw !important;
+  }
+
+  .titulo {
+    background-color: #212121;
+    text-align: center;
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .corto-video .botones {
+    justify-content: center;
+    align-items: end;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 75px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cortos-video-contenedor {
+    width: 80%;
+  }
+
+  .seccion-cortos {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .info-comentarios-escritorio {
+    width: 60%;
+  }
+
+  .corto-video {
+    width: 40%;
+  }
+
+  .corto-video video {
+    height: 80dvh;
+    object-fit: cover;
+  }
+
+  .canal-imagen {
+    width: 10%;
+  }
+
+  .corto-descripcion {
+    width: 90%;
+  }
+
+  .corto-video .botones {
+    bottom: 10px;
+  }
+
+  .cortos-recomendados .cortos {
+    width: 13vw !important;
+  }
 }
