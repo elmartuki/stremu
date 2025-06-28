@@ -303,16 +303,372 @@
         </div>
       </div>
     </aside>
+
     <main>
-      <section class="contenedor-principal">
-        <section class="cortos-contenedor">
-          <article class="corto">
-            <div class="corto-video"></div>
+      <section class="seccion-cortos">
+        <section class="cortos-video-contenedor">
+          <article class="corto-item">
+            <div class="corto-video">
+              <video
+                autoplay
+                muted
+                controls
+                loop
+                src="../sources/videos/cortos-vista-previa.mp4"
+              ></video>
+
+              <div class="botones">
+                <div class="likes">
+                  <button>
+                    <img
+                      src="../icons/recommend_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                  </button>
+
+                  <p>45,7 mil</p>
+                </div>
+
+                <div class="likes">
+                  <button>
+                    <img
+                      src="../icons/chat_bubble_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                  </button>
+
+                  <p>507</p>
+                </div>
+
+                <div class="likes">
+                  <button>
+                    <img
+                      src="../icons/bookmarks_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                  </button>
+
+                  <p>294</p>
+                </div>
+
+                <div class="corto-musica">
+                  <img
+                    src="https://cdn-images.dzcdn.net/images/cover/c6e5ffd676146c447a4a81819c5d29ae/1900x1900-000000-80-0-0.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="info-de-este-corto">
+                <div class="canal-imagen">
+                  <img src="../sources/canales/channels4_profile.jpg" alt="" />
+                </div>
+
+                <div class="corto-descripcion">
+                  <div class="canal-nombre">
+                    <p>
+                      Ejemplo
+                      <img width="20px" src="../icons/tick.png" alt="" />
+                    </p>
+                  </div>
+
+                  <div class="canal-titulo">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Expedita pariatur ullam error.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section class="info-comentarios-escritorio">
+              <div class="comentarios-contenedor">
+                <div class="info-de-este-corto-escritorio">
+                  <div class="canal-imagen">
+                    <img
+                      src="../sources/canales/channels4_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="corto-descripcion">
+                    <div class="canal-nombre">
+                      <p>
+                        Ejemplo
+                        <img width="20px" src="../icons/tick.png" alt="" />
+                      </p>
+                    </div>
+
+                    <div class="canal-titulo">
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Expedita pariatur ullam error.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="corto-musica">
+                    <img
+                      src="https://cdn-images.dzcdn.net/images/cover/c6e5ffd676146c447a4a81819c5d29ae/1900x1900-000000-80-0-0.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="titulo">
+                  <p>53 Comentarios</p>
+                </div>
+                <article class="comentarios">
+                  <div class="comentario">
+                    <div class="usuario-perfil">
+                      <img src="../sources/canales/unnamed.jpg" alt="" />
+                      <span>Ejemplo |</span> <span>Hace 2 horas</span>
+                    </div>
+
+                    <div class="usuario-comentario">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, vitae? Id vxime voluptatem corporis accusamus
+                        ducimus temporibus!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="comentario">
+                    <div class="usuario-perfil">
+                      <img src="../sources/canales/unnamed.jpg" alt="" />
+                      <span>Ejemplo |</span> <span>Hace 2 horas</span>
+                    </div>
+
+                    <div class="usuario-comentario">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, vitae? Id voluptate quos impedit pariatur
+                        laborum obcaecati maxime quidem, ipsa ipsum quo neque
+                        sint? Maxime voluptatem corporis accusamus ducimus
+                        temporibus!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="comentario">
+                    <div class="usuario-perfil">
+                      <img src="../sources/canales/unnamed.jpg" alt="" />
+                      <span>Ejemplo |</span> <span>Hace 2 horas</span>
+                    </div>
+
+                    <div class="usuario-comentario">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="comentario">
+                    <div class="usuario-perfil">
+                      <img src="../sources/canales/unnamed.jpg" alt="" />
+                      <span>Ejemplo |</span> <span>Hace 2 horas</span>
+                    </div>
+
+                    <div class="usuario-comentario">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, vitae? Id voluptate quos impedit
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
           </article>
         </section>
 
-        <section class="cortos-contenedor-info">
-          <div></div>
+        <div class="titulo">
+          <p>Cortos Recomendados</p>
+        </div>
+
+        <section class="cortos-recomendados">
+          <article class="cortos">
+            <div class="miniatura">
+              <img
+                class="miniatura-img"
+                src="../sources/miniaturas/oardefault.avif"
+                alt=""
+              />
+              <div class="vista-previa">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="../sources/videos/cortos-vista-previa.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="cortos-des">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis et rerum delectus maiores illo eos.
+              </h4>
+
+              <div class="canal">
+                <div class="canal-imagen">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_kcU5uw_NKob_mg5xWqCwGUMJc5TQO4ZWg8vK9IJsu3pDE=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <div class="canal-nombre">
+                  <h6>Hola</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cortos">
+            <div class="miniatura">
+              <img
+                class="miniatura-img"
+                src="../sources/miniaturas/oardefault.avif"
+                alt=""
+              />
+              <div class="vista-previa">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="../sources/videos/cortos-vista-previa.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="cortos-des">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis et rerum delectus maiores illo eos.
+              </h4>
+
+              <div class="canal">
+                <div class="canal-imagen">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_kcU5uw_NKob_mg5xWqCwGUMJc5TQO4ZWg8vK9IJsu3pDE=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <div class="canal-nombre">
+                  <h6>Hola</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cortos">
+            <div class="miniatura">
+              <img
+                class="miniatura-img"
+                src="../sources/miniaturas/oardefault.avif"
+                alt=""
+              />
+              <div class="vista-previa">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="../sources/videos/cortos-vista-previa.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="cortos-des">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis et rerum delectus maiores illo eos.
+              </h4>
+
+              <div class="canal">
+                <div class="canal-imagen">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_kcU5uw_NKob_mg5xWqCwGUMJc5TQO4ZWg8vK9IJsu3pDE=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <div class="canal-nombre">
+                  <h6>Hola</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cortos">
+            <div class="miniatura">
+              <img
+                class="miniatura-img"
+                src="../sources/miniaturas/oardefault.avif"
+                alt=""
+              />
+              <div class="vista-previa">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="../sources/videos/cortos-vista-previa.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="cortos-des">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis et rerum delectus maiores illo eos.
+              </h4>
+
+              <div class="canal">
+                <div class="canal-imagen">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_kcU5uw_NKob_mg5xWqCwGUMJc5TQO4ZWg8vK9IJsu3pDE=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <div class="canal-nombre">
+                  <h6>Hola</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cortos">
+            <div class="miniatura">
+              <img
+                class="miniatura-img"
+                src="../sources/miniaturas/oardefault.avif"
+                alt=""
+              />
+              <div class="vista-previa">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="../sources/videos/cortos-vista-previa.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="cortos-des">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis et rerum delectus maiores illo eos.
+              </h4>
+
+              <div class="canal">
+                <div class="canal-imagen">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_kcU5uw_NKob_mg5xWqCwGUMJc5TQO4ZWg8vK9IJsu3pDE=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <div class="canal-nombre">
+                  <h6>Hola</h6>
+                </div>
+              </div>
+            </div>
+          </article>
         </section>
       </section>
     </main>
@@ -322,4 +678,22 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const videos = document.querySelectorAll(".corto-video video");
+      videos.forEach((video) => {
+        // Cambia el cursor para indicar que es clicable
+        video.style.cursor = "pointer";
+
+        video.addEventListener("click", () => {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    });
+  </script>
 </html>
