@@ -2,7 +2,19 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.852);
+  color: rgba(255, 255, 255, 0.849);
+  font-family: "Stremu-font", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stremu-font";
+  src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* rango de pesos que admite la variable font */
+  font-style: normal;
+  font-display: swap;
 }
 
 a {
