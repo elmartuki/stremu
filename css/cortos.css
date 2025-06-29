@@ -4,46 +4,25 @@
   box-sizing: border-box;
 }
 
-/* ANIMACIONES DE LIKE/COMENTARIOS/GUARDAR */
+/* ANIMACION DE LIKE/COMENTAR Y GUARDAR */
 
-.estadisticas-botones {
-  .estadisticas-botones-activo {
-    display: none;
-  }
+input[type="checkbox"] {
+  display: none;
 }
 
 .estadisticas-botones-inactivo {
-  filter: invert();
-}
-
-.estadisticas-botones:nth-child(1):hover :is(.estadisticas-botones-inactivo) {
-  filter: invert();
-  display: none;
-}
-
-.estadisticas-botones:nth-child(1):hover :is(.estadisticas-botones-activo) {
   display: flex;
   filter: invert();
-  animation: likeado 1s ease-in 1;
 }
-
-.estadisticas-botones:nth-child(2):hover :is(.estadisticas-botones-inactivo) {
-  filter: invert();
+.estadisticas-botones-activo {
   display: none;
 }
 
-.estadisticas-botones:nth-child(2):hover :is(.estadisticas-botones-activo) {
-  display: flex;
-  filter: invert();
-  animation: likeado 1s ease-in 1;
-}
-
-.estadisticas-botones:nth-child(3):hover :is(.estadisticas-botones-inactivo) {
-  filter: invert();
+.estadisticas-botones input:checked ~ .estadisticas-botones-inactivo {
   display: none;
 }
 
-.estadisticas-botones:nth-child(3):hover :is(.estadisticas-botones-activo) {
+.estadisticas-botones input:checked ~ .estadisticas-botones-activo {
   display: flex;
   filter: invert();
   animation: likeado 1s ease-in 1;
@@ -59,7 +38,6 @@
     background-color: rgba(0, 0, 0, 0.587);
     border-radius: 90%;
   }
-
   100% {
     background-color: transparent;
     border-radius: 90%;
