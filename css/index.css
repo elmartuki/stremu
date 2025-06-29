@@ -6,6 +6,11 @@
   font-family: "Stremu-font", Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @font-face {
