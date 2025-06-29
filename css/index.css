@@ -172,6 +172,17 @@ nav.navbar.navbar-expand-lg {
   background: #0f0f0f;
 }
 
+.perfil-desk {
+  display: none;
+}
+
+.perfil-movil {
+  img {
+    width: 35px;
+    border-radius: 100%;
+  }
+}
+
 /* ACCESOS RAPIDOS */
 
 .links {
@@ -360,10 +371,6 @@ aside {
   display: none;
 }
 
-.navbar-desk {
-  display: none; /* SE DEJA DE MOSTRAR LA BARRA DE NAVEGACION QUE ES PARA LA VERSION DE ESCRITORIO */
-}
-
 /* VISTA PREVIA */
 
 .vista-previa {
@@ -503,24 +510,39 @@ aside {
 }
 
 @media (min-width: 1024px) {
-  /* No mostrar */
-  .show {
+  .links {
     display: none;
   }
 
-  /* NAV-BAR PHONE */
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+
+  .perfil-desk {
+    display: flex;
+    img {
+      width: 35px;
+      border-radius: 100%;
+    }
+  }
+
+  .container-fluid {
+    padding: 0px 75px;
+  }
+
+  .perfil-movil {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 0px 75px;
+  }
 
   nav.navbar.navbar-expand-lg {
-    display: none;
-  }
-
-  /* NAVBAR-ESCRITORIO */
-
-  .navbar-desk {
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
+    padding: 8px 70px;
   }
 
   .logo {
@@ -534,15 +556,8 @@ aside {
   }
 
   .buscador-contenedor {
-    width: 40%;
-    margin: 0px;
-  }
-
-  .perfil {
-    width: 30%;
-    display: flex;
-    justify-content: end;
-    margin: 0px 20px 0px 0px;
+    width: 45%;
+    margin: auto;
   }
 
   /* SLIDERTEXT */
@@ -620,7 +635,7 @@ aside {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         gap: 10px;
       }
     }
@@ -670,6 +685,10 @@ aside {
   .accesos-rapidos {
     .accesos-1 {
       padding-left: 15px;
+
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 
