@@ -21,20 +21,20 @@
     text-shadow: 2px 1px 5px #ff4600;
     cursor: pointer;
 }
+
 section{
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 15px;
     background-color: #0f0f0f;
 }
 
 section .item{
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
     background-color: #0f0f0f;
     width: 85%;
-    height: 75dvh;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
@@ -58,7 +58,7 @@ section .info{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: none;
-    height: 41dvh;
+    height: 34.5vh;
 }
 section .info p{
     text-align: center;
@@ -93,30 +93,6 @@ section .item .link{
 }
 
 
-@media (min-width: 375px){
-
-    section .item{
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #0f0f0f;
-    width: 75%;
-    height: 75dvh;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-    section .info h2{
-    margin-left: -0.9px;
-    padding: 5px 0px 0px 0px;
-    width: 100.6%;
-    background-color: rgb(255, 68, 0);
-    color: rgba(255, 255, 255, 0.877);
-    font-weight: 600;
-    margin-top: -10.9px; 
-}
-
-}
 
 @media (min-width: 425px){
 
@@ -136,7 +112,6 @@ section .item .link{
     section .item{
         margin: auto;
         margin-top: 10px;
-        margin-bottom: 50px;
         background-color: #0f0f0f;
         width: 75%;
         height: 75dvh;
@@ -151,7 +126,9 @@ section .item .link{
         width: 100%;
         padding: 10px 30px;
 }
-
+section .info{
+    height: 35vh;
+}
     section .item .link{
         position: sticky;
         margin-top: 1px;
@@ -162,6 +139,18 @@ section .item .link{
   
 }
 
+@media (min-width: 375px){
+
+    section .info{
+    height: 30.6vh;
+}
+
+}
+@media (min-width: 375px){
+    section .info{
+    height: 35vh;
+}
+}
 @media (min-width: 768px){
     
      .titulo{
@@ -194,7 +183,9 @@ section .item .link{
     text-align: center;
     
 }
-
+section .info{
+    height: 33.5vh;
+}
 section .item .img p{
     text-align: center;
     width: 100%;
@@ -212,7 +203,7 @@ section .item .link{
         background-color: #0f0f0f;
         border: 2px solid #ff4600;
         border-radius: 5px;
-        padding: 1px 15px;
+        padding: 1px 40px;
         color: white;
         text-decoration: none;
     }
@@ -270,11 +261,7 @@ section .item img{
 }
 
 section .info{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top: none;
-    height: 41dvh;
-    margin-top: -10px;
+    height: 32.4vh;
 }
 
 section .info h2{
@@ -304,7 +291,7 @@ section .item .info .link{
         border: 1px solid #ff4600;
         border-radius: 5px;
         margin-top: 60px;
-        padding: 2px 35px;
+        padding: 2px 45px;
         color: rgb(255, 255, 255);
         transition: 0.3s ease-in-out;
         text-decoration: none;
