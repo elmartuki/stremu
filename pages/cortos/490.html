@@ -351,7 +351,7 @@
               </div>
 
               <div class="info-de-este-corto">
-                <div class="canal-imagen">
+                <div class="canal-imagen" onclick="window.location.href='/pages/usuarios/user-1.html'">
                   <img src="/sources/canales/channels4_profile.jpg" alt="" />
                 </div>
 
@@ -376,7 +376,7 @@
             <section class="info-comentarios-escritorio">
               <div class="comentarios-contenedor">
                 <div class="info-de-este-corto-escritorio">
-                  <div class="canal-imagen">
+                  <div class="canal-imagen" onclick="window.location.href='/pages/usuarios/user-1.html'">
                     <img
                       src="/sources/canales/channels4_profile.jpg"
                       alt=""
@@ -669,22 +669,4 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const videos = document.querySelectorAll(".corto-video video");
-      videos.forEach((video) => {
-        // Cambia el cursor para indicar que es clicable
-        video.style.cursor = "pointer";
-
-        video.addEventListener("click", () => {
-          if (video.paused) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        });
-      });
-    });
-  </script>
 </html>
