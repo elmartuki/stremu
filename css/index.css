@@ -309,6 +309,15 @@ nav.navbar.navbar-expand-lg {
   }
 }
 
+@keyframes categorias {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
 /* VIDEOS */
 
 .contenendor-videos {
