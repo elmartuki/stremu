@@ -603,67 +603,79 @@ aside {
 
   /* MAIN */
   main {
-    width: 80%;
+    width: 75%;
     flex-direction: column;
     align-items: end;
   }
 
   /* ASIDE */
 
-  aside {
+  .aside-contenedor {
     display: flex;
-    width: 20%;
-    height: 100%;
+    gap: 10px;
+    flex-direction: column;
+    width: 25%;
     position: sticky;
     top: 0;
-
-    padding: 70px 0px 0px 0px;
+    align-self: flex-start;
+    padding: 70px 20px 0px 20px;
   }
 
-  .accesos-rapidos {
+  .aside-separador {
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    margin: 10px 0px;
+  }
+
+  .aside-accesos-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .aside-accesos {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    transition: 0.5s;
+    padding: 5px 10px;
+
+    &:hover {
+      padding: 5px 10px;
+      background-color: rgb(28, 28, 28);
+      border-radius: 8px;
+    }
+
+    img {
+      filter: invert();
+    }
+  }
+
+  .aside-canales-contenedor {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
+  }
 
-    .accesos-1 {
-      display: flex;
-      width: 80%;
-      border-radius: 10px;
-      padding: 2px 0px 2px 5px;
-      align-items: center;
-      justify-content: start;
-      transition: 0.3s;
+  .aside-canales {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
-      &:hover {
-        background-color: #ff6200;
-      }
-
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-        gap: 10px;
+    .aside-canales_imagen {
+      img {
+        width: 40px;
+        border-radius: 100%;
       }
     }
   }
 
   .selected {
-    background-color: rgb(33, 33, 33);
-  }
-
-  .icon {
-    width: 24px;
-    filter: invert();
-  }
-
-  /* SEPARADOR */
-
-  .separador {
-    width: 90%;
-    border: 1px solid rgba(255, 255, 255, 0.586);
+    padding: 5px 10px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 8px;
   }
 
   /* Canales sugeridos */
@@ -699,6 +711,14 @@ aside {
         font-size: 1.3rem;
       }
     }
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .aside-contenedor {
+    width: 20%;
   }
 
   .contenendor-videos {
