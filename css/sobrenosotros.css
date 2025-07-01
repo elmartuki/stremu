@@ -67,7 +67,7 @@ section .info p{
 }
 section .info h2{
     margin-left: -2px;
-    width: 101.5%;
+    width: 101.3%;
     background-color: rgb(255, 68, 0);
     color: rgba(255, 255, 255, 0.877);
     border-bottom-right-radius: 8px;
