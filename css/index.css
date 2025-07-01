@@ -305,7 +305,7 @@ nav.navbar.navbar-expand-lg {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-500%);
+    transform: translateX(-350%);
   }
 }
 
