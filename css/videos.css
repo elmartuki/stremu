@@ -235,6 +235,10 @@
     width: 10%;
   }
 
+  .cortos-contenedor {
+    justify-content: start;
+  }
+
   video {
     width: 95%;
   }
@@ -250,7 +254,7 @@
   /* CORTOS */
 
   .cortos {
-    width: 12vw !important;
+    width: 15vw !important;
   }
 
   /* COMENTARIOS Y VIDEOS RELACIOADOS */
@@ -287,6 +291,10 @@
 @media (min-width: 1440px) {
   .video-info {
     width: 7%;
+  }
+
+  .cortos {
+    width: 17vw !important;
   }
 
   .video-info-2 {
