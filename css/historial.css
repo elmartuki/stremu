@@ -100,10 +100,6 @@
   }
 }
 
-img {
-  width: 15px;
-}
-
 .historial-video-titulo {
   font-size: 1rem;
   display: -webkit-box;
@@ -254,7 +250,7 @@ img {
     width: 20%;
 
     img {
-      width: 20px;
+      width: 25px;
       border-radius: 100%;
     }
   }
@@ -322,7 +318,7 @@ img {
 
   .historial-corto-item {
     display: flex;
-    width: 14vw;
+    width: 15vw;
     gap: 20px;
   }
 

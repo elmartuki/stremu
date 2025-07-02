@@ -11,6 +11,13 @@
         text-shadow: 3px 0px 1px #ff4600;
     }
 }
+.titulo:hover{
+    color: #ffffff;
+    text-shadow: 2px 1px 5px #ff4600;
+    cursor: pointer;
+}
+
+
 section{
     width: 100%;
     display: flex;
@@ -20,6 +27,16 @@ section{
 .contenedor{
     width: 100%;
     display: flex;
+=======
+    gap: 15px;
+    background-color: #0f0f0f;
+}
+
+section .item{
+    margin: auto;
+    margin-top: 10px;
+    background-color: #0f0f0f;
+    width: 85%;
     flex-direction: column;
     position: relative;
     align-items: center;
@@ -40,6 +57,22 @@ section{
 
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+section .info{
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    height: 34.5vh;
+}
+section .info p{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
 }
 .info-nombre{
     width: 101.4%;
@@ -49,9 +82,58 @@ section{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 1s ease-in-out;
+    width: 101.5%;
+    background-color: rgb(255, 68, 0);
+    color: rgba(255, 255, 255, 0.877);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-top: -10.9px; 
+}
+section .item .link{
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    a{
+        background-color: #0f0f0f;
+        border: 2px solid #ff4600;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 2px 35px;
+        transition: 1s ease-in-out;
+        text-decoration: none;
+    }
+}
+
+
+
+@media (min-width: 425px){
+
+        .titulo{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
     h2{
         padding-top: 8px;
     }
+    
+}
+
+    section .item{
+        margin: auto;
+        margin-top: 10px;
+        background-color: #0f0f0f;
+        width: 75%;
+        height: 75dvh;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        transition: 1s;
 }
 
 .info-nombre:hover{
@@ -63,6 +145,35 @@ section{
 
 .info-descripcion{
     padding: 15px;
+section .info{
+    height: 35vh;
+}
+    section .item .link{
+        position: sticky;
+        margin-top: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  
+}
+
+@media (min-width: 375px){
+
+    section .info{
+    height: 30.6vh;
+}
+
+}
+@media (min-width: 375px){
+    section .info{
+    height: 35vh;
+}
+}
+@media (min-width: 768px){
+    
+     .titulo{
+    margin-top: -10px;
     display: flex;
     justify-content: center;
 }
@@ -88,6 +199,12 @@ section{
 
 @media (min-width: 768px){
     section{
+section .info{
+    height: 33.5vh;
+}
+section .item .img p{
+    text-align: center;
+ 
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -101,6 +218,20 @@ section{
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    a{
+        
+        background-color: #0f0f0f;
+        border: 2px solid #ff4600;
+        border-radius: 5px;
+        padding: 1px 40px;
+        color: white;
+        text-decoration: none;
+    }
 }
 
 }
@@ -127,6 +258,15 @@ section{
     height: 75vh;
     border-radius: 15px;
     border: 2px solid rgb(255, 255, 255);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+section .info{
+    height: 32.4vh;
 }
 .info-nombre{
     h2{
@@ -138,6 +278,20 @@ section{
     padding: 0px 0px;
     a{
         padding: 0px 30px;
+        background-color: #0f0f0f;
+        border: 1px solid #ff4600;
+        border-radius: 5px;
+        margin-top: 60px;
+        padding: 2px 45px;
+        color: rgb(255, 255, 255);
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+        &:hover{
+            color: rgba(255, 68, 0, 0.781);
+            border: 1px solid #ff440075;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
     }
     
 }

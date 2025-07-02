@@ -1,0 +1,371 @@
+.cotenedor-principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usuario-banner-contenedor {
+  width: 100%;
+  object-fit: cover;
+  padding: 0px 10px;
+}
+
+.usurio-banner {
+  width: 100%;
+  position: relative;
+}
+
+.usurio-banner_imagen {
+  img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 160px;
+  }
+}
+
+.usuario-banner_canal {
+  position: absolute;
+  bottom: -30px;
+  left: 8px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: start;
+  background-color: black;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+
+  .botones {
+    background-color: rgb(18, 18, 18);
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: flex;
+
+    button {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+
+      img {
+        width: 20px;
+        filter: invert();
+      }
+    }
+  }
+
+  .usuario-banner_canal-imagen {
+    width: 50px;
+    border-radius: 20px;
+  }
+}
+
+.usuario-banner_biografia {
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  padding: 45px 20px;
+}
+
+.usuario-banner_biografia-contendio {
+  width: 100%;
+}
+
+.usuario-banner_biografia-botones {
+  width: 20%;
+}
+
+/* VIDEOS DESTACADOS */
+
+.seccion-3 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-destacados_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0px;
+}
+
+.videos-destacados-contenedor {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-destacado {
+  width: 80vw;
+}
+
+.videos-destacados_miniatura {
+  width: 100%;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.videos-destacados-info {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+}
+
+.videos-destacados-info_canal {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  div {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 35px;
+      border-radius: 100%;
+    }
+  }
+}
+
+.videos-destacados-info_descripcion {
+  width: 85%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+  .videos-destacados-info_descripcion_nombre {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+
+    p {
+      font-size: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Limita a 2 líneas/párrafos */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.videos-destacados-info_descripcion_titulo {
+  font-size: 0.8rem;
+}
+
+/* VISTA PREVIA */
+
+.vista-previa {
+  display: none;
+  transition: 0.5s;
+}
+
+.vista-previa:hover {
+  box-shadow: -5px 5px 0px 0px #ff6200;
+  transform: translateY(-5px) translateX(5px);
+  border-bottom-left-radius: 10px;
+}
+
+.videos-destacado:hover :is(.videos-destacados_miniatura) {
+  display: none;
+}
+
+.videos-destacado:hover :is(.vista-previa) {
+  display: flex;
+  border-radius: 5px;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: miniatura 5s ease-in 1;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+/* CATEGORIAS DESTACADAS */
+
+.titulo-seccion {
+  h1 {
+    animation: categorias 90s linear infinite !important;
+  }
+}
+
+.seccion-2 {
+  width: 95%;
+  overflow-x: scroll;
+  padding: 5px 0px;
+}
+
+.categorias-cotenendor {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+.categoria_miniatura-contenedor {
+  width: 100%;
+  height: 100%;
+
+  .vista-previa {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.categoria_miniatura {
+  height: 240px;
+  .categoria_miniatura-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+.categoria {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.categoria_titulo {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.categoria_etiquetas {
+  display: flex;
+  gap: 5px;
+
+  span {
+    background-color: rgb(34 34 34);
+    padding: 1px 7px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+}
+
+/* VISTA PREVIA CATEGORIAS */
+
+.vista-previa {
+  display: none;
+  transition: 0.5s;
+}
+
+.vista-previa:hover {
+  box-shadow: -5px 5px 0px 0px #ff6200;
+  transform: translateY(-5px) translateX(5px);
+  border-bottom-left-radius: 10px;
+}
+
+.categoria_miniatura-contenedor:hover :is(.categoria_miniatura) {
+  display: none;
+}
+
+.categoria_miniatura-contenedor:hover :is(.vista-previa) {
+  display: flex;
+  border-radius: 5px;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: miniatura 5s ease-in 1;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Categorias */
+
+  .categoria {
+    width: 17vw;
+  }
+  .usuario-banner_canal {
+    left: 15px;
+  }
+
+  .videos-destacados-contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .videos-destacado {
+    width: 44vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+
+  .categoria {
+    width: 12vw;
+  }
+
+  .usuario-banner_canal {
+    left: 25px;
+  }
+
+  .usurio-banner_imagen {
+    img {
+      height: 300px;
+    }
+  }
+
+  .videos-destacado {
+    width: 24vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .seccion-2 {
+    overflow-x: hidden;
+  }
+
+  .categorias-cotenendor {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categoria {
+    width: 10vw;
+  }
+
+  body {
+    flex-direction: row;
+  }
+}

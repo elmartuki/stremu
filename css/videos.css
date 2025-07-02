@@ -24,6 +24,7 @@
 
     video {
       width: 100%;
+      border-radius: 10px;
     }
   }
 }
@@ -100,6 +101,11 @@
     border-radius: 5px;
     padding: 0px 5px;
     gap: 5px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #ce4f00;
+    }
     button {
       width: 70%;
       border: none;
@@ -235,6 +241,10 @@
     width: 10%;
   }
 
+  .cortos-contenedor {
+    justify-content: start;
+  }
+
   video {
     width: 95%;
   }
@@ -250,7 +260,7 @@
   /* CORTOS */
 
   .cortos {
-    width: 12vw !important;
+    width: 15vw !important;
   }
 
   /* COMENTARIOS Y VIDEOS RELACIOADOS */
@@ -287,6 +297,10 @@
 @media (min-width: 1440px) {
   .video-info {
     width: 7%;
+  }
+
+  .cortos {
+    width: 17vw !important;
   }
 
   .video-info-2 {
