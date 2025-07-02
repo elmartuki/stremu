@@ -230,7 +230,7 @@ nav.navbar.navbar-expand-lg {
   border: 1px solid rgba(255, 255, 255, 0.464);
 }
 
-/* buscador */
+/* BUSCADOR */
 
 .buscador-contenedor {
   width: 100%;
@@ -352,7 +352,8 @@ nav.navbar.navbar-expand-lg {
 .video {
   width: 90%;
   margin: 0px 0px 20px 0px;
-  .miniatura {
+
+  .video_miniatura {
     width: 100%;
     position: relative;
     p {
@@ -363,17 +364,17 @@ nav.navbar.navbar-expand-lg {
       padding: 0px 8px;
       border-radius: 8px;
     }
-    .miniatura-img {
+    .video_miniatura-img {
       width: 100%;
       border-radius: 10px;
     }
   }
-  .video-descripcion {
+  .video_descripcion {
     width: 100%;
     padding: 10px 0px 0px 0px;
     gap: 15px;
     display: flex;
-    .canal {
+    .video_descripcion-canal {
       img {
         width: 40px;
         border-radius: 100%;
@@ -381,7 +382,7 @@ nav.navbar.navbar-expand-lg {
     }
   }
 }
-.titulo {
+.video_descripcion_titulo {
   h4 {
     font-size: 1rem;
     display: -webkit-box;
@@ -392,11 +393,11 @@ nav.navbar.navbar-expand-lg {
   }
 }
 
-.estadisticas {
+.video_descripcion_estadisticas {
   font-size: 0.8rem;
 }
 
-.video-descripcion_nombre {
+.video_descripcion_nombre {
   h6 {
     display: flex;
     justify-content: start;
@@ -423,11 +424,11 @@ aside {
   border-bottom-left-radius: 10px;
 }
 
-.miniatura:hover :is(.miniatura-img, p) {
+.video_miniatura:hover :is(.video_miniatura-img, p) {
   display: none;
 }
 
-.miniatura:hover :is(.vista-previa) {
+.video_miniatura:hover :is(.vista-previa) {
   display: flex;
   border-radius: 5px;
   video {
@@ -446,6 +447,35 @@ aside {
 
   100% {
     opacity: 100%;
+  }
+}
+
+/* CORTOS VISTA PREVIA */
+
+.vista-previa {
+  display: none;
+  transition: 0.5s;
+}
+
+.vista-previa:hover {
+  box-shadow: -5px 5px 0px 0px #ff6200;
+  transform: translateY(-5px) translateX(5px);
+  border-bottom-left-radius: 10px;
+}
+
+.cortos_miniatura:hover :is(img, p) {
+  display: none;
+}
+
+.cortos_miniatura:hover :is(.vista-previa) {
+  display: flex;
+  border-radius: 5px;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: miniatura 5s ease-in 1;
+    border-bottom-left-radius: 5px;
   }
 }
 
@@ -494,7 +524,7 @@ aside {
   }
 }
 
-.miniatura {
+.cortos_miniatura {
   width: 100%;
   img {
     width: 100%;
@@ -502,7 +532,7 @@ aside {
   }
 }
 
-.cortos-des {
+.cortos_descripcion {
   h4 {
     font-size: 1rem;
     display: -webkit-box;
@@ -512,13 +542,13 @@ aside {
     text-overflow: ellipsis;
   }
 
-  .canal {
+  .cortos_descripcion_canal {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 5px;
 
-    .canal-imagen {
+    .cortos_descripcion_canal-imagen {
       img {
         width: 35px;
         border-radius: 100%;
@@ -527,7 +557,7 @@ aside {
   }
 }
 
-.canal-nombre {
+.cortos_descripcion_canal-nombre {
   h6 {
     margin: 0px;
   }
