@@ -26,6 +26,10 @@ a {
   text-decoration: none !important;
 }
 
+img {
+  cursor: pointer;
+}
+
 main {
   margin: 60px 0px 0px 0px;
 }
@@ -392,6 +396,14 @@ nav.navbar.navbar-expand-lg {
   font-size: 0.8rem;
 }
 
+.video-descripcion_nombre {
+  h6 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
 /* ASIDE */
 
 aside {
@@ -515,6 +527,12 @@ aside {
   }
 }
 
+.canal-nombre {
+  h6 {
+    margin: 0px;
+  }
+}
+
 @media (min-width: 768px) {
   .contenendor-videos {
     flex-direction: row;
@@ -633,6 +651,12 @@ aside {
     top: 0;
     align-self: flex-start;
     padding: 70px 20px 0px 20px;
+    height: 100vh;
+    transition: 0.5s;
+
+    &:hover {
+      overflow-y: auto;
+    }
   }
 
   .aside-separador {
@@ -655,7 +679,6 @@ aside {
     padding: 5px 10px;
 
     &:hover {
-      padding: 5px 10px;
       background-color: rgb(28, 28, 28);
       border-radius: 8px;
     }
@@ -677,6 +700,14 @@ aside {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgb(28, 28, 28);
+      border-radius: 8px;
+    }
 
     .aside-canales_imagen {
       img {
