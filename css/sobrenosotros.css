@@ -8,7 +8,20 @@
   text-align: center;
   h2 {
     font-size: 40px;
-    text-shadow: 3px 0px 1px #ff4600;
+    color: #fff;
+    text-shadow: 1.3px -0.4px 0px #000, 
+                 3px -0.6px 0px #ff4600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 600;
+    &:hover{
+        color: #ff4400;
+        text-shadow: 1.3px -0.4px 2px #fff, 
+                 3px -0.6px 5px #ff4600;
+                 
+        font-weight: 800;
+    }
   }
 }
 section {
@@ -86,6 +99,14 @@ section {
 }
 
 @media (min-width: 768px) {
+     .titulo-pagina{
+        h2{
+            font-size: 55px;
+            text-shadow: 2px -0.4px 0px #000, 
+                         5px -0.6px 0px #ff4600;
+            letter-spacing: 3px;
+        }
+     }
   section {
     width: 100%;
     display: flex;
@@ -103,6 +124,26 @@ section {
   }
 }
 @media (min-width: 1024px) {
+    .titulo-pagina {
+  text-align: center;
+  h2 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 2px -0.4px 0px #000, 
+                 5px -0.6px 0px #ff4600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 600;
+    &:hover{
+        color: #ff4400;
+        text-shadow: 2px -0.4px 1px #fff, 
+                 0px -0.6px 15px #fff;
+                 
+        font-weight: 800;
+    }
+  }
+}
   section {
     width: 100%;
     display: flex;
