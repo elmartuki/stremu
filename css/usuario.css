@@ -219,7 +219,7 @@ main {
   }
 }
 
-.seccion-2 {
+.section-2 {
   width: 95%;
   overflow-x: scroll;
   padding: 5px 0px;
@@ -351,7 +351,7 @@ main {
 }
 
 @media (min-width: 1440px) {
-  .seccion-2 {
+  .section-2 {
     overflow-x: hidden;
   }
 
