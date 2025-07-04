@@ -44,12 +44,6 @@ input[type="checkbox"] {
   }
 }
 
-/* Contenedor principal */
-.contenedor-principal {
-  width: 95%;
-  margin: 0 auto;
-}
-
 /* Video del corto */
 .corto-video {
   position: relative;
@@ -62,7 +56,8 @@ input[type="checkbox"] {
 
 .corto-video video {
   width: 95%;
-  height: 90vh;
+  height: 78vh;
+  height: 90dvh;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -107,7 +102,7 @@ input[type="checkbox"] {
   width: 95%;
   display: flex;
   padding: 0 10px;
-  gap: 10px;
+  gap: 15px;
 }
 
 .info-de-este-corto .canal-imagen {
@@ -182,7 +177,7 @@ input[type="checkbox"] {
 }
 
 .cortos-recomendados .cortos {
-  width: 45dvw;
+  width: 43dvw;
 }
 
 /* Panel de comentarios en escritorio */
@@ -219,7 +214,7 @@ input[type="checkbox"] {
 
 .ver-mas {
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   left: 40vw;
   border-radius: 10px;
   animation: scrollear 2s linear infinite alternate;
@@ -427,10 +422,6 @@ input[type="checkbox"] {
     object-fit: cover;
   }
 
-  .canal-imagen {
-    width: 10%;
-  }
-
   .corto-descripcion {
     width: 90%;
   }
@@ -446,6 +437,6 @@ input[type="checkbox"] {
   }
 
   .ver-mas {
-    left: 21.5vw;
+    left: 22.5vw;
   }
 }
