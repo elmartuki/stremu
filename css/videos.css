@@ -4,12 +4,7 @@
 
 /* COTENENDOR PRINCIPAL DE LA PAGINA DE LOS VIDEOS */
 
-.contenedor-principal {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
+
 
 /* CONTENEDOR DEL VIDEO */
 

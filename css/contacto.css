@@ -3,13 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  display: block;
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
 
 .seccion-1 {
   width: 100%;
@@ -44,14 +37,6 @@ main {
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-  }
-
-  main {
-    flex-direction: row;
-    align-items: center;
-  }
 
   .seccion-1 {
     width: 50%;
