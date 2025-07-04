@@ -62,7 +62,7 @@ input[type="checkbox"] {
 
 .corto-video video {
   width: 95%;
-  height: 84dvh;
+  height: 90vh;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -206,6 +206,54 @@ input[type="checkbox"] {
   }
 }
 
+.cortos-video-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.corto-item {
+  gap: 20px;
+  position: relative;
+}
+
+.ver-mas {
+  position: absolute;
+  bottom: -10px;
+  left: 40vw;
+  border-radius: 10px;
+  animation: scrollear 2s linear infinite alternate;
+
+  a {
+    border: none;
+    padding: 2px 15px;
+  }
+}
+
+#uno,
+#dos,
+#tres {
+  scroll-margin-top: 60px;
+}
+
+@keyframes scrollear {
+  0% {
+    background-color: #ff6200;
+    transform: scale(1.1);
+  }
+
+  100% {
+    background-color: #ff6200a0;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .ver-mas {
+    left: 43vw;
+  }
+}
+
 @media (min-width: 1024px) {
   /* Estructura principal */
   .seccion-cortos {
@@ -216,6 +264,8 @@ input[type="checkbox"] {
 
   .cortos-video-contenedor {
     display: flex;
+    gap: 20px;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
@@ -348,6 +398,10 @@ input[type="checkbox"] {
     width: 100%;
     gap: 75px;
   }
+
+  .ver-mas {
+    left: 31.5vw;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -389,5 +443,9 @@ input[type="checkbox"] {
 
   .cortos-recomendados .cortos {
     width: 13vw;
+  }
+
+  .ver-mas {
+    left: 21.5vw;
   }
 }
