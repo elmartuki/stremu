@@ -1,145 +1,400 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suscripción - Stremu</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    crossorigin="anonymous"
-  />
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripción - Stremu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
 
-    .logo {
-      width: 160px;
-      margin: 40px auto 20px;
-      display: block;
-    }
+    <style>
+      body {
+        background-color: #111;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
 
-    .titulo {
-      font-size: 2rem;
-      font-weight: 600;
-    }
+      .logo {
+        width: 160px;
+        margin: 40px auto 20px;
+        display: block;
+      }
 
-    .subtitulo {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
+      .titulo {
+        font-size: 2rem;
+        font-weight: 600;
+      }
 
-    .card {
-      background-color: #1c1c1c;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 20px;
-      transition: all 0.3s ease;
-    }
+      .subtitulo {
+        font-size: 1rem;
+        color: #ccc;
+        margin-bottom: 40px;
+      }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-    }
+      .card {
+        background-color: #1c1c1c;
+        border-radius: 12px;
+        padding: 30px;
+        margin: 20px;
+        transition: all 0.3s ease;
+      }
 
-    .btn-primary {
-      background-color: #0d6efd;
-      border: none;
-    }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      }
 
-    .btn-primary:hover {
-      background-color: #0b5ed7;
-    }
+      .btn-primary {
+        background-color: #0d6efd;
+        border: none;
+      }
 
-    .btn-warning {
-      background-color: #f0ad4e;
-      border: none;
-    }
+      .btn-primary:hover {
+        background-color: #0b5ed7;
+      }
 
-    .btn-warning:hover {
-      background-color: #ec9a24;
-    }
+      .btn-warning {
+        background-color: #f0ad4e;
+        border: none;
+      }
 
-    .plan-titulo {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
+      .btn-warning:hover {
+        background-color: #ec9a24;
+      }
 
-    .plan-precio {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
+      .plan-titulo {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
 
-    .plan-detalle {
-      color: #aaa;
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
+      .plan-precio {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
 
-    .container {
-      max-width: 960px;
-    }
-  </style>
-</head>
-<body>
-  <img src="../sources/logo/logo-con-texto.png" alt="Stremu Logo" class="logo" />
+      .plan-detalle {
+        color: #aaa;
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+      }
 
-  <h1 class="titulo">Planes de Suscripción</h1>
-  <p class="subtitulo">Elegí tu plan y disfrutá de contenido sin límites</p>
+      .container {
+        max-width: 960px;
+      }
+    </style>
+  </head>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <!-- Plan Básico -->
-      <div class="col-md-5">
-        <div class="card text-white">
-          <h2 class="plan-titulo">Suscripción Básica</h2>
-          <p class="plan-detalle">Accedé a contenido exclusivo sin anuncios</p>
-          <p class="plan-precio">$4.999 / mes</p>
-          <button class="btn btn-primary w-100">Suscribirme</button>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="../index.html"
+          ><img class="stremu-logo" src="../sources/logo/logo.png" alt=""
+        /></a>
+
+        <div class="perfil-movil">
+          <img
+            class="perfil-img"
+            src="https://us.123rf.com/450wm/nuwaba/nuwaba1707/nuwaba170700076/81763793-person-user-friend-vectror-illustration-icon-isolated-on-grey-background.jpg"
+            alt=""
+          />
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="buscador-contenedor">
+            <div class="buscador">
+              <input type="text" name="" id="" placeholder="Buscar..." />
+            </div>
+          </div>
+
+          <div class="links">
+            <a class="link-1 selected" href="../index.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Inicio
+              </p>
+            </a>
+
+            <a class="link-1" href="../pages/videos.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/videocam_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Videos
+              </p>
+            </a>
+
+            <a class="link-1" href="../pages/cortos.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/animated_images_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Cortos
+              </p>
+            </a>
+
+            <a class="link-1" href="./categorias.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/view_agenda_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Categorias
+              </p>
+            </a>
+
+            <div class="separador"></div>
+
+            <a class="link-1" href="../pages/historial.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/history_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Historial
+              </p>
+            </a>
+
+            <a class="link-1" href="../pages/sobre-nosotros.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/groups_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Sobre Nosotros
+              </p>
+            </a>
+
+            <a class="link-1" href="../pages/contacto.html">
+              <p>
+                <img
+                  class="icon"
+                  src="../icons/3p_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Contacto
+              </p>
+            </a>
+          </div>
+          <div class="perfil-desk">
+            <img
+              class="perfil-img"
+              src="https://us.123rf.com/450wm/nuwaba/nuwaba1707/nuwaba170700076/81763793-person-user-friend-vectror-illustration-icon-isolated-on-grey-background.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <!-- Plan Ultimate -->
-      <div class="col-md-5">
-        <div class="card text-white border border-warning">
-          <h2 class="plan-titulo text-warning">Ultimate ⭐</h2>
-          <p class="plan-detalle">Incluye todo, soporte VIP y más</p>
-          <p class="plan-precio text-warning">$7.999 / mes</p>
-          <button class="btn btn-warning w-100">Suscribirme</button>
+  <body>
+    <div class="contenedor-principal">
+      <aside class="aside-contenedor">
+        <div class="aside-accesos-contenedor">
+          <a class="aside-accesos" href="../index.html">
+            <img
+              src="../icons/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Inicio</p>
+          </a>
+
+          <a class="aside-accesos" href="./videos.html">
+            <img
+              src="../icons/videocam_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Videos</p>
+          </a>
+
+          <a class="aside-accesos" href="./cortos.html">
+            <img
+              src="../icons/animated_images_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Cortos</p>
+          </a>
+
+          <a class="aside-accesos" href="../pages/categorias.html">
+            <img
+              src="../icons/view_agenda_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Categorias</p>
+          </a>
         </div>
-      </div>
+
+        <div class="aside-separador"></div>
+
+        <div class="aside-accesos-contenedor">
+          <a class="aside-accesos" href="./historial.html">
+            <img
+              src="../icons/history_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Historial</p>
+          </a>
+
+          <a class="aside-accesos selected" href="./sobre-nosotros.html">
+            <img
+              src="../icons/groups_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Sobre Nosotros</p>
+          </a>
+
+          <a class="aside-accesos" href="./contacto.html">
+            <img
+              src="../icons/3p_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Contacto</p>
+          </a>
+        </div>
+
+        <div class="aside-separador"></div>
+
+        <div class="aside-canales-contenedor">
+          <div class="aside-titulo">
+            <p>Canales Recomenados</p>
+          </div>
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/channels4_profile (1).jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>SoyDalto</p>
+            </div>
+          </div>
+
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/channels4_profile (2).jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>NatGeo</p>
+            </div>
+          </div>
+
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/channels4_profile (3).jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>Sobrina Carpintera</p>
+            </div>
+          </div>
+
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/channels4_profile.jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>Carajo Stream</p>
+            </div>
+          </div>
+
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/unnamed (1).jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>ElRubius</p>
+            </div>
+          </div>
+
+          <div class="aside-canales">
+            <div class="aside-canales_imagen">
+              <img src="../sources/canales/unnamed (2).jpg" alt="" />
+            </div>
+            <div class="aside-canales_nombre">
+              <p>Peter Capusotto</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <img src="../sources/logo/logo.png" alt="Stremu Logo" class="logo" />
+
+        <h1 class="titulo">Planes de Suscripción</h1>
+        <p class="subtitulo">
+          Elegí tu plan y disfrutá de contenido sin límites
+        </p>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Plan Básico -->
+            <div class="col-md-5">
+              <div class="card text-white">
+                <h2 class="plan-titulo">Suscripción Básica</h2>
+                <p class="plan-detalle">
+                  Accedé a contenido exclusivo sin anuncios
+                </p>
+                <p class="plan-precio">$4.999 / mes</p>
+                <button class="btn btn-primary w-100">Suscribirme</button>
+              </div>
+            </div>
+
+            <!-- Plan Ultimate -->
+            <div class="col-md-5">
+              <div class="card text-white border border-warning">
+                <h2 class="plan-titulo text-warning">Ultimate ⭐</h2>
+                <p class="plan-detalle">Incluye todo, soporte VIP y más</p>
+                <p class="plan-precio text-warning">$7.999 / mes</p>
+                <button class="btn btn-warning w-100">Suscribirme</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-  </div>
 
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"
-  ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Script funcionalidad -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const botones = document.querySelectorAll("button");
+    <!-- Script funcionalidad -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const botones = document.querySelectorAll("button");
 
-      botones.forEach(boton => {
-        boton.addEventListener("click", () => {
-          const plan = boton.closest(".card")?.querySelector("h2")?.textContent || "Plan desconocido";
+        botones.forEach((boton) => {
+          boton.addEventListener("click", () => {
+            const plan =
+              boton.closest(".card")?.querySelector("h2")?.textContent ||
+              "Plan desconocido";
 
-          // Guardar en localStorage
-          localStorage.setItem("planSuscripcion", plan);
+            // Guardar en localStorage
+            localStorage.setItem("planSuscripcion", plan);
 
-          // Mostrar mensaje
-          alert(`¡Gracias por suscribirte al plan ${plan.trim()}!`);
+            // Mostrar mensaje
+            alert(`¡Gracias por suscribirte al plan ${plan.trim()}!`);
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
