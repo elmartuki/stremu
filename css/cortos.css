@@ -215,7 +215,7 @@ input[type="checkbox"] {
 .ver-mas {
   position: absolute;
   bottom: 10px;
-  left: 40vw;
+  left: 43vw;
   border-radius: 10px;
   animation: scrollear 2s linear infinite alternate;
 
