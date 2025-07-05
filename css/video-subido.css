@@ -1,0 +1,47 @@
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+@import "./import/videos-contenedor.css";
+@import "./import/cortos-contenedor.css";
+@import "./videos.css";
+
+.video {
+  .video_miniatura {
+    height: 26vh !important;
+  }
+
+  .vista-previa {
+    height: 26vh !important;
+  }
+}
+
+.video_descripcion-contenedor {
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  h6 {
+    font-size: 0.7rem;
+  }
+
+  span {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videos-relacionados {
+    .video {
+      margin-bottom: 10px;
+    }
+  }
+  .video {
+    .video_miniatura {
+      height: 22vh !important;
+    }
+
+    .vista-previa {
+      height: 22vh !important;
+    }
+  }
+}
