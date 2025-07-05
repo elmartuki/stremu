@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.849);
+  font-family: "Stremu-font", Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Stremu-font";
+  src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* BODY */
+
+body {
+  background-color: #0f0f0f !important;
+}
+
+p {
+  margin: 0px !important;
+}

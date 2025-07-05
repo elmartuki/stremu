@@ -1,4 +1,6 @@
-@import "./index.css";
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
 
 * {
   margin: 0;

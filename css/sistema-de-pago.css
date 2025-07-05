@@ -1,4 +1,6 @@
-@import "/css/index.css";
+@import "./import/general.css";
+@import "./import/aside.css";
+@import "./import/navbar.css";
 
 .seccion-1 {
   width: 100%;

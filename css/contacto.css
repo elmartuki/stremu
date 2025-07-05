@@ -1,9 +1,17 @@
-@import "./index.css";
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .seccion-1 {
