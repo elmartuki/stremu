@@ -1,3 +1,5 @@
+@import "./index.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +11,16 @@
   h2 {
     font-size: 40px;
     color: #fff;
-    text-shadow: 1.3px -0.4px 0px #000, 
-                 3px -0.6px 0px #ff4600;
+    text-shadow: 1.3px -0.4px 0px #000, 3px -0.6px 0px #ff4600;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     letter-spacing: 1px;
     font-weight: 600;
-    &:hover{
-        color: #ff4400;
-        text-shadow: 1.3px -0.4px 2px #fff, 
-                 3px -0.6px 5px #ff4600;
-                 
-        font-weight: 800;
+    &:hover {
+      color: #ff4400;
+      text-shadow: 1.3px -0.4px 2px #fff, 3px -0.6px 5px #ff4600;
+
+      font-weight: 800;
     }
   }
 }
@@ -77,9 +77,9 @@ section {
 .info-descripcion {
   padding: 15px 10px 25px 10px;
   display: flex;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .button-git {
   border: 2px solid #ff4600;
@@ -105,14 +105,13 @@ section {
 }
 
 @media (min-width: 768px) {
-     .titulo-pagina{
-        h2{
-            font-size: 55px;
-            text-shadow: 2px -0.4px 0px #000, 
-                         5px -0.6px 0px #ff4600;
-            letter-spacing: 3px;
-        }
-     }
+  .titulo-pagina {
+    h2 {
+      font-size: 55px;
+      text-shadow: 2px -0.4px 0px #000, 5px -0.6px 0px #ff4600;
+      letter-spacing: 3px;
+    }
+  }
   section {
     width: 100%;
     display: flex;
@@ -130,26 +129,24 @@ section {
   }
 }
 @media (min-width: 1024px) {
-    .titulo-pagina {
-  text-align: center;
-  h2 {
-    font-size: 60px;
-    color: #fff;
-    text-shadow: 2px -0.4px 0px #000, 
-                 5px -0.6px 0px #ff4600;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    letter-spacing: 3px;
-    font-weight: 600;
-    &:hover{
+  .titulo-pagina {
+    text-align: center;
+    h2 {
+      font-size: 60px;
+      color: #fff;
+      text-shadow: 2px -0.4px 0px #000, 5px -0.6px 0px #ff4600;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      letter-spacing: 3px;
+      font-weight: 600;
+      &:hover {
         color: #ff4400;
-        text-shadow: 2px -0.4px 1px #fff, 
-                 0px -0.6px 15px #fff;
-                 
+        text-shadow: 2px -0.4px 1px #fff, 0px -0.6px 15px #fff;
+
         font-weight: 800;
+      }
     }
   }
-}
   section {
     width: 100%;
     display: flex;
