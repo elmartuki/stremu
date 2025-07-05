@@ -1,14 +1,8 @@
-@import "./index.css";
-
-body {
-  flex-direction: column;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+@import "./import/text-slider.css";
+@import "./import/categorias-contenedor.css";
 
 /* VISTA PREVIA DE LA CATEGORIA */
 
@@ -144,7 +138,7 @@ main {
   p:nth-child(1) {
     font-size: 0.8rem;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limita a 2 líneas/párrafos */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;

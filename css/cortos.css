@@ -1,10 +1,8 @@
-@import "./index.css";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+@import "./import/text-slider.css";
+@import "./import/cortos-contenedor.css";
 
 /* ANIMACION DE LIKE/COMENTAR Y GUARDAR */
 
@@ -133,7 +131,7 @@ input[type="checkbox"] {
   text-overflow: ellipsis;
 
   &:hover {
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -376,12 +374,6 @@ input[type="checkbox"] {
   .comentario .usuario-perfil img {
     width: 30px;
     border-radius: 50%;
-  }
-
-  .cortos-contenedor {
-    .cortos {
-      width: 19vw;
-    }
   }
 
   .titulo {
