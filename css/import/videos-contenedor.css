@@ -87,7 +87,7 @@
 .video_miniatura:hover :is(.vista-previa) {
   display: flex;
   border-radius: 5px;
-  height: 230px;
+  height: 210px;
   video {
     width: 100%;
     object-fit: cover;
