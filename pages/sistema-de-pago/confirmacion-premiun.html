@@ -335,45 +335,49 @@
               </div>
             </div>
 
-            <form action="">
+            <form action="./pago-confirmado.html" method="get">
               <div class="contenedor_formulario">
-                <label for="">Número de tarjeta</label>
+                <label for="numero_tarjeta">Número de tarjeta</label>
                 <input
-                  type="number"
-                  name=""
-                  id=""
+                  type="text"
+                  name="numero_tarjeta"
+                  id="numero_tarjeta"
                   placeholder="1234 1234 1234 1234"
-                  maxlength="12"
+                  pattern="\d{13,19}"
+                  title="Ingrese entre 13 y 19 digitos sin espacios"
                   required
                 />
 
                 <div class="contenedor_formulario-exp-CVV">
                   <div>
-                    <label for="">Exp</label>
-                    <input type="month" name="" id="" required />
+                    <label for="exp">Exp</label>
+                    <input type="month" name="exp" id="exp" required />
                   </div>
 
                   <div>
-                    <label for="">CVV</label>
+                    <label for="cvv">CVV</label>
                     <input
-                      type="number"
-                      name=""
-                      id=""
+                      type="text"
+                      name="cvv"
+                      id="cvv"
+                      pattern="\d{3}"
                       maxlength="3"
                       placeholder="123"
+                      title="Ingrese los 3 digitos del codigo de seguridad de su tarjeta"
                       required
                     />
                   </div>
                 </div>
 
-                <label for="">Titular</label>
+                <label for="titular">Titular</label>
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  name="titular"
+                  id="titular"
                   placeholder="Ingrese su nombre"
                   minlength="5"
                   maxlength="20"
+                  title="Ingrese su nombre completo"
                   required
                 />
 
