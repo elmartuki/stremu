@@ -1,3 +1,8 @@
+@import "./aside.css";
+@import "./navbar.css";
+@import "./categorias.css";
+@import "./usuario.css";
+
 * {
   margin: 0;
   padding: 0px;
@@ -18,7 +23,7 @@
   font-family: "Stremu-font";
   src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
     format("truetype");
-  font-weight: 100 900; /* rango de pesos que admite la variable font */
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -162,43 +167,6 @@ p {
   margin: 0px 25px 0px 0px;
 }
 
-/* NAVBAR */
-
-header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  background-color: #0f0f0fe0;
-}
-.perfil {
-  .perfil-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 100%;
-  }
-}
-
-span.navbar-toggler-icon {
-  filter: invert(1);
-}
-
-nav.navbar.navbar-expand-lg {
-  background: #0f0f0f;
-}
-
-.perfil-desk {
-  display: none;
-}
-
-.perfil-movil {
-  img {
-    width: 35px;
-    border-radius: 100%;
-  }
-}
-
 /* ACCESOS RAPIDOS */
 
 .links {
@@ -279,19 +247,36 @@ nav.navbar.navbar-expand-lg {
 /* TEXT SLIDER */
 .slider-text {
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
   margin: 20px 0px;
 
-  .titulo-seccion,
   .promocion {
+    position: relative;
+    width: 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 0% 100%,
+      transparent
+    );
     background-color: #ff6200;
-    width: 100vw;
     height: 40px;
     overflow: hidden;
     display: flex;
-    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    --time: 50s;
 
-    h1 {
+    .item {
+      width: max-content;
+      position: absolute;
+      left: 100%;
+      animation: textslider var(--time) linear infinite;
+      animation-delay: calc(
+        (var(--time) / var(--cantidad)) * (var(--posicion) - 1) - var(--time)
+      ) !important;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -300,6 +285,8 @@ nav.navbar.navbar-expand-lg {
       white-space: nowrap !important;
 
       img {
+        vertical-align: middle;
+        margin-right: 0.5rem;
         filter: invert();
         width: 60px;
       }
@@ -307,30 +294,13 @@ nav.navbar.navbar-expand-lg {
   }
 }
 
-@keyframes slidetext {
-  0% {
-    transform: translateX(0%);
+@keyframes textslider {
+  from {
+    left: 100%;
   }
-  100% {
-    transform: translateX(-500%);
-  }
-}
 
-@keyframes slidepromo {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-350%);
-  }
-}
-
-@keyframes categorias {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-500%);
+  to {
+    left: calc(-100% - 120rem);
   }
 }
 
@@ -400,12 +370,6 @@ nav.navbar.navbar-expand-lg {
     justify-content: start;
     align-items: center;
   }
-}
-
-/* ASIDE */
-
-aside {
-  display: none;
 }
 
 /* VISTA PREVIA */
@@ -541,7 +505,7 @@ aside {
   h4 {
     font-size: 1rem;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limita a 2 líneas/párrafos */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -673,172 +637,39 @@ aside {
     }
   }
 
-  /* MAIN */
-  main {
-    width: 75%;
-    flex-direction: column;
-  }
-
   footer {
     width: 100%;
     height: 400px;
     background-color: red;
   }
 
-  /* ASIDE */
-
-  .aside-contenedor {
-    display: flex;
-    width: 25%;
-    gap: 10px;
-    flex-direction: column;
-    position: sticky;
-    height: 92vh;
-    top: 60px;
-    align-self: flex-start;
-    padding: 0px 20px 0px 20px;
-    transition: 0.5s;
-    overflow-y: hidden;
-
-    &:hover {
-      overflow-y: scroll;
-    }
-  }
-
-  .aside-separador {
-    border: 1px solid rgba(255, 255, 255, 0.452);
-    margin: 10px 0px;
-  }
-
-  .aside-accesos-contenedor {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .aside-accesos {
-    width: 100%;
-    display: flex;
-    gap: 5px;
-    transition: 0.5s;
-    padding: 5px 10px;
-
-    &:hover {
-      background-color: rgb(28, 28, 28);
-      border-radius: 8px;
-    }
-
-    img {
-      filter: invert();
-    }
-  }
-
-  .aside-canales-contenedor {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .aside-canales {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: 0.5s;
-
-    &:hover {
-      background-color: rgb(28, 28, 28);
-      border-radius: 8px;
-    }
-
-    .aside-canales_imagen {
-      img {
-        width: 40px;
-        border-radius: 100%;
+  @media (min-width: 1024px) {
+    .contenendor-videos {
+      .video {
+        width: 23vw;
+        margin: 1% 0px 0px 1%;
       }
     }
-  }
 
-  .selected {
-    padding: 5px 10px;
-    background-color: rgb(28, 28, 28);
-    border-radius: 8px;
-  }
-
-  /* Canales sugeridos */
-
-  .canales-sugeridos {
-    width: 100%;
-  }
-
-  .canal-segerido {
-    display: flex;
-    margin: 5px 30px;
-
-    p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-
-      .canal-perfil {
-        width: 40px;
-        border-radius: 100%;
+    .cortos-contenedor {
+      .cortos {
+        width: 17vw;
       }
     }
-  }
-}
 
-@media (min-width: 1024px) {
-  .contenendor-videos {
     .video {
-      width: 23vw;
-      margin: 1% 0px 0px 1%;
+      .video_miniatura {
+        height: 28vh;
+      }
     }
-  }
 
-  .cortos-contenedor {
-    .cortos {
-      width: 17vw;
-    }
-  }
-
-  .video {
-    .video_miniatura {
-      height: 28vh;
-    }
-  }
-
-  .video_miniatura:hover :is(.vista-previa) {
-    height: 100%;
-    video {
+    .video_miniatura:hover :is(.vista-previa) {
+      height: 100%;
     }
   }
 }
 
 @media (min-width: 1440px) {
-  .accesos-rapidos {
-    .accesos-1 {
-      padding-left: 15px;
-
-      p {
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  main {
-    width: 80%;
-  }
-
-  .aside-contenedor {
-    width: 20%;
-  }
-
   .contenendor-videos {
     .video {
       width: 25vw;
@@ -865,14 +696,7 @@ aside {
     }
   }
 
-  .video {
-    .video_miniatura {
-    }
-  }
-
   .video_miniatura:hover :is(.vista-previa) {
     height: 100%;
-    video {
-    }
   }
 }
