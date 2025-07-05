@@ -1,3 +1,8 @@
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+@import "./import/text-slider.css";
+
 .historia-videos-cortos-contenedor {
   display: flex;
   flex-direction: column-reverse;

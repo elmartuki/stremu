@@ -1,0 +1,59 @@
+/* TEXT SLIDER */
+.slider-text {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 20px 0px;
+
+  .promocion {
+    position: relative;
+    width: 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 0% 100%,
+      transparent
+    );
+    background-color: #ff6200;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    --time: 50s;
+
+    .item {
+      width: max-content;
+      position: absolute;
+      left: 100%;
+      animation: textslider var(--time) linear infinite;
+      animation-delay: calc(
+        (var(--time) / var(--cantidad)) * (var(--posicion) - 1) - var(--time)
+      ) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      gap: 5px;
+      white-space: nowrap !important;
+
+      img {
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        filter: invert();
+        width: 60px;
+      }
+    }
+  }
+}
+
+@keyframes textslider {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: calc(-100% - 120rem);
+  }
+}

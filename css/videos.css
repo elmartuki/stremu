@@ -1,10 +1,13 @@
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+@import "./import/text-slider.css";
+@import "./import/videos-contenedor.css";
+@import "./import/cortos-contenedor.css";
+
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-/* COTENENDOR PRINCIPAL DE LA PAGINA DE LOS VIDEOS */
-
-
 
 /* CONTENEDOR DEL VIDEO */
 
@@ -131,7 +134,7 @@
     background-color: #212121;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 20px 0px;
   }
 
   .comentarios {
@@ -187,6 +190,14 @@
 
 /* VIDEOS RELACIONADOS */
 
+.videos-relacionados_titulo {
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  background-color: #212121;
+  margin: 20px 0px;
+}
+
 .videos-relacionados {
   width: 95%;
   display: flex;
@@ -202,11 +213,24 @@
   }
 }
 
+/* CORTOS */
+
+.cortos-contenedor {
+  .cortos:nth-child(4) {
+    display: none !important;
+  }
+}
+
 /* MEDIAQUERYS PARA TABLES */
+
+.video {
+  .video_miniatura {
+    height: 23vh;
+  }
+}
 
 @media (min-width: 768px) {
   /* CORTOS */
-
   .cortos {
     width: 21vw !important;
   }
@@ -218,6 +242,7 @@
   /* VIDEOS Y COMENTARIOS */
 
   .videos-relacionados {
+    gap: 0px;
     .video {
       width: 45vw !important;
     }
@@ -226,6 +251,12 @@
   .videos-relacionados {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .video {
+    .video_miniatura {
+      height: 24vh;
+    }
   }
 }
 
@@ -254,8 +285,10 @@
 
   /* CORTOS */
 
-  .cortos {
-    width: 15vw !important;
+  .cortos-contenedor {
+    .cortos {
+      width: 22vw !important;
+    }
   }
 
   /* COMENTARIOS Y VIDEOS RELACIOADOS */
@@ -277,19 +310,32 @@
   }
 
   .comentarios-contenedor {
-    width: 95%;
+    width: 70%;
     margin: 0px;
   }
 
   .videos-relacionados {
-    width: 25%;
+    width: 30%;
     margin: 0px;
+    align-content: start;
   }
 }
 
 /* MEDIAQUERYS PARA ESCRITORIO */
 
 @media (min-width: 1440px) {
+  .cortos-contenedor {
+    .cortos {
+      width: 11vw !important;
+    }
+  }
+
+  .video {
+    .video_miniatura {
+      height: 26vh;
+    }
+  }
+
   .video-info {
     width: 7%;
   }
@@ -304,9 +350,5 @@
 
   .video-info-3 {
     width: 15%;
-  }
-
-  .cortos:nth-child(5) {
-    display: none !important;
   }
 }

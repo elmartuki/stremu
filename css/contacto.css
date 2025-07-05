@@ -1,7 +1,17 @@
+@import "./import/aside.css";
+@import "./import/navbar.css";
+@import "./import/general.css";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .seccion-1 {
@@ -37,7 +47,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .seccion-1 {
     width: 50%;
   }
