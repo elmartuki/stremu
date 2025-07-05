@@ -645,6 +645,8 @@ p {
 
   @media (min-width: 1024px) {
     .contenendor-videos {
+      align-items: start;
+
       .video {
         width: 23vw;
         margin: 1% 0px 0px 1%;

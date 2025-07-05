@@ -54,6 +54,12 @@ main {
     padding: 0px 10px;
     border-radius: 5px;
     display: flex;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #ff6200;
+      transform: scale(1.05);
+    }
 
     button {
       display: flex;
