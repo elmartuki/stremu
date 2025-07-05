@@ -5,10 +5,6 @@
 @import "./import/videos-contenedor.css";
 @import "./import/cortos-contenedor.css";
 
-* {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 /* CONTENEDOR DEL VIDEO */
 
 .video-contenedor {
@@ -221,13 +217,18 @@
   }
 }
 
-/* MEDIAQUERYS PARA TABLES */
-
 .video {
+  width: 90vw;
   .video_miniatura {
-    height: 23vh;
+    height: 23vh !important;
+  }
+
+  .vista-previa {
+    height: 23vh !important;
   }
 }
+
+/* MEDIAQUERYS PARA TABLES */
 
 @media (min-width: 768px) {
   /* CORTOS */
@@ -255,7 +256,11 @@
 
   .video {
     .video_miniatura {
-      height: 24vh;
+      height: 28vh !important;
+    }
+
+    .vista-previa {
+      height: 28vh !important;
     }
   }
 }

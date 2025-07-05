@@ -2,12 +2,6 @@
 @import "./import/navbar.css";
 @import "./import/general.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .titulo-pagina {
   text-align: center;
   h2 {
