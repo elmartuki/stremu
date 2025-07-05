@@ -294,6 +294,11 @@ input[type="checkbox"] {
     overflow-y: scroll;
   }
 
+  .usuario-comentario {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
   .info-de-este-corto-escritorio {
     display: flex;
     width: 100%;

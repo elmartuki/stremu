@@ -76,6 +76,13 @@ main {
     background-color: #ff6200;
     border-radius: 5px;
     display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #cd4f00;
+      transform: scale(1.1);
+    }
 
     img {
       filter: invert();
