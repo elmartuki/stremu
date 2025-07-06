@@ -112,6 +112,38 @@ aside {
     border-radius: 8px;
   }
 
+  .destacado {
+    animation: destacar 5s linear infinite alternate;
+  }
+
+  @keyframes destacar {
+    0% {
+      background-color: #ff620072;
+      border-radius: 5px;
+    }
+
+    25% {
+      background-color: rgba(255, 111, 0, 0.471);
+      border-radius: 5px;
+    }
+
+    50% {
+      background-color: rgba(255, 0, 0, 0.503);
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
+
+    75% {
+      background-color: rgba(255, 0, 123, 0.492);
+      border-radius: 5px;
+    }
+
+    100% {
+      background-color: rgba(43, 0, 255, 0.458);
+      border-radius: 5px;
+    }
+  }
+
   /* Canales sugeridos */
 
   .canales-sugeridos {

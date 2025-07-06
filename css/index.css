@@ -139,6 +139,12 @@
       display: none;
     }
   }
+
+  /* CATEGORIAS */
+
+  .section-2 {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 1440px) {
