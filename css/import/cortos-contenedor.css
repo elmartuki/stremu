@@ -55,38 +55,6 @@
   }
 }
 
-/* CORTOS VISTA PREVIA */
-
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
-.vista-previa:hover {
-  box-shadow: -5px 5px 0px 0px #ff6200;
-  transform: translateY(-5px) translateX(5px);
-  border-bottom-left-radius: 10px;
-}
-
-.cortos_miniatura:hover :is(img, p) {
-  display: none;
-}
-
-.cortos_miniatura:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 5px;
-  height: 380px;
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 5px;
-  }
-}
-
 @media (min-width: 768px) {
   .cortos-contenedor {
     .cortos {

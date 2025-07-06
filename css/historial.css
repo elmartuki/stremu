@@ -2,6 +2,7 @@
 @import "./import/navbar.css";
 @import "./import/general.css";
 @import "./import/text-slider.css";
+@import "./import/vista-previa.css";
 
 .historia-videos-cortos-contenedor {
   display: flex;
@@ -112,81 +113,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-/* ANIMACION HISTORIAL VIDEOS */
-
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
-.vista-previa:hover {
-  box-shadow: -5px 5px 0px 0px #ff6200;
-  transform: translateY(-5px) translateX(5px);
-  border-bottom-left-radius: 10px;
-}
-
-.historial-video-miniatura:hover :is(img) {
-  display: none;
-}
-
-.historial-video-miniatura:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 5px;
-  video {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 5px;
-  }
-}
-
-/* ANIMACION HISTORIAL CORTOS */
-
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
-.vista-previa {
-  transition: 0.5s;
-}
-
-.historial-corto-item-descripcion {
-  transition: 0.5s;
-}
-
-.historial-corto-item-miniatura:hover
-  :is(.vista-previa, .historial-corto-item-descripcion) {
-  transform: translateY(-5px) translateX(5px);
-}
-
-.historial-corto-item-miniatura:hover :is(.historial-corto-item-descripcion) {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.829),
-    rgba(0, 0, 0, 0.493),
-    rgba(0, 0, 0, 0)
-  );
-}
-
-.historial-corto-item-miniatura:hover :is(.miniatura) {
-  display: none;
-}
-
-.historial-corto-item-miniatura:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 10px;
-
-  video {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 10px;
-  }
 }
 
 /* CORTOS HISTORIAL */

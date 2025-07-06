@@ -1,10 +1,5 @@
 /* VISTA PREVIA */
 
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
 .section-2 {
   width: 100%;
   max-width: 100%;
@@ -16,30 +11,6 @@
     gap: 20px;
     width: max-content;
     padding: 5px 20px;
-  }
-}
-
-.vista-previa:hover,
-.categoria-principal_imagen:hover,
-.categorias_imagen:hover {
-  box-shadow: -5px 5px 0px 0px #ff6200;
-  transform: translateY(-5px) translateX(5px);
-  border-radius: 10px;
-}
-
-.creadores:hover :is(.creadores-miniatura) {
-  display: none;
-}
-
-.creadores:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 5px;
-  video {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 5px;
   }
 }
 
@@ -76,31 +47,6 @@
 .categorias_espectadores {
   width: 100%;
   font-size: 0.6rem;
-}
-
-/* VISTA PREVIA CATEGORIAS */
-
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
-.categorias:hover :is(.categorias_imagen) {
-  display: none;
-}
-
-.categorias:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 5px;
-  height: 230px;
-  video {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 5px;
-  }
 }
 
 @media (min-width: 768px) {

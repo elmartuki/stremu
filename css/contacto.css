@@ -2,12 +2,6 @@
 @import "./import/navbar.css";
 @import "./import/general.css";
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .seccion-1 {
   width: 100%;
   display: flex;
@@ -41,6 +35,12 @@ main {
 }
 
 @media (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .seccion-1 {
     width: 50%;
   }

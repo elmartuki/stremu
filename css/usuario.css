@@ -3,6 +3,7 @@
 @import "./import/general.css";
 @import "./import/text-slider.css";
 @import "./import/categorias-contenedor.css";
+@import "./import/vista-previa.css";
 
 .cotenedor-principal {
   width: 100%;
@@ -182,35 +183,6 @@
 
 .videos-destacados-info_descripcion_titulo {
   font-size: 0.8rem;
-}
-
-/* VISTA PREVIA */
-
-.vista-previa {
-  display: none;
-  transition: 0.5s;
-}
-
-.vista-previa:hover {
-  box-shadow: -5px 5px 0px 0px #ff6200;
-  transform: translateY(-5px) translateX(5px);
-  border-bottom-left-radius: 10px;
-}
-
-.videos-destacado:hover :is(.videos-destacados_miniatura) {
-  display: none;
-}
-
-.videos-destacado:hover :is(.vista-previa) {
-  display: flex;
-  border-radius: 5px;
-  video {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: miniatura 5s ease-in 1;
-    border-bottom-left-radius: 5px;
-  }
 }
 
 .seccion-2_categorias {
