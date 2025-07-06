@@ -129,7 +129,7 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 
 .videos-destacados-info_descripcion_titulo {
@@ -249,6 +249,7 @@
 
   .videos-destacados-contenedor {
     width: 100%;
+    align-items: start;
   }
 
   .seccion-2_categorias {
