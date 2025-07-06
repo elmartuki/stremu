@@ -49,7 +49,7 @@
             }
             
         }
-.contenedor-formulario form{
+.contenedor-formulario .formulario{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -71,13 +71,7 @@
     padding: 10px 45px 10px 45px;
     background-color: #202020;
     color: white;
-    
 }
-.contenedor-formulario form input:focus {
- background-color: #202020;
-  box-shadow: 2px 2px 1px #000000;
-}
-
 .contenedor-formulario form input[type="email"]:invalid,
 .contenedor-formulario form input[type="password"]:invalid {
   background-color: #202020;
@@ -108,19 +102,41 @@
     flex-wrap: nowrap;
     justify-content: center;
     img{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
+        background-color: #202020;
+        border-radius: 100px;
     }
-    .iconos{    
-        a{
-            .google{
-                background-color: #202020;
-                border-radius: 100px;
-                width: 50px;
-                height: 50px;
-            }
-        }
+    
+}
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .input-verificacion {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+
+    .validacion {
+      width: 30px;
+      height: 40px;
+      background-color: #202020;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
     }
+  }
+  .boton{
+    width: 30%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: #202020;
+    border: none;
+    border-radius: 8px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -130,6 +146,33 @@
     .contenedor-formulario form input[type="email"],
 .contenedor-formulario form input[type="password"] {
     width: 400px;
+}
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .input-verificacion {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+
+    .validacion {
+      width: 45px;
+      height: 65px;
+      font-size: 27px;
+      background-color: #202020;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+  .boton{
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 }
 @media (min-width: 1440px){
