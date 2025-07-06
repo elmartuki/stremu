@@ -303,61 +303,31 @@
       <main>
         <section class="contenedor-login">
           <article class="login">
-            <div class="contenedor-formulario1">
-              <h2>Ingrese el codigo que te enviamos por email</h2>
-              <form action="./crear-contraseña.html" class="formulario form2">
-                <div class="input-verificacion">
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="validacion"
-                    inputmode="numeric"
-                    maxlength="1"
-                    placeholder="_"
-                    required
-                  />
-                </div>
+            <div class="contenedor-formulario-contraseña">
+              <h2>Crea una nueva contraseña</h2>
+              <form action="./login.html">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="6"
+                  maxlength="40"
+                  placeholder="Crear contraseña"
+                  required
+                />
 
-                <input type="submit" class="boton" value="Confirmar" />
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Repetir contraseña"
+                  required
+                  oninput="this.setCustomValidity(this.value !== password.value ? 'Las contraseñas no coinciden' : '')"
+                />
+
+                <button type="submit" class="boton-contraseña" value="Enviar">
+                  Crear
+                </button>
               </form>
             </div>
           </article>
