@@ -56,15 +56,41 @@
                 justify-content: center;
                 margin: auto;
                 gap: 20px;
+                
 }
-.contenedor-formulario form input[type="text"],
+.contenedor-formulario form input[type="email"]::placeholder,
+.contenedor-formulario form input[type="password"]::placeholder  {
+  color: white;
+}
+.contenedor-formulario form input[type="email"],
 .contenedor-formulario form input[type="password"],
 .contenedor-formulario form input[type="submit"] {
     margin: auto;
     border: none;
     border-radius: 7px;
     padding: 10px 45px 10px 45px;
-    color: rgba(0, 0, 0, 0.973);
+    background-color: #202020;
+    color: white;
+    
+}
+.contenedor-formulario form input:focus {
+ background-color: #202020;
+  box-shadow: 2px 2px 1px #000000;
+}
+
+.contenedor-formulario form input[type="email"]:invalid,
+.contenedor-formulario form input[type="password"]:invalid {
+  background-color: #202020;
+  outline: 2px solid red;
+  color: white;
+}
+
+
+.contenedor-formulario form input[type="email"]:valid,
+.contenedor-formulario form input[type="password"]:valid {
+  background-color: #202020!important;
+  outline: 3px solid green !important;
+  color: white;
 }
 .contenedor-formulario form input[type="submit"]{
     width: 50%;
@@ -72,14 +98,14 @@
     padding: 8px;
     transition: all 0.5ms ease-in-out;
     &:hover{
-        background-color: #ffffffc5;
+        background-color: #202020ef;
     }
 }
 @media (min-width: 1024px){
     .contenedor-login h2{
         font-size: 50px;
      }
-    .contenedor-formulario form input[type="text"],
+    .contenedor-formulario form input[type="email"],
 .contenedor-formulario form input[type="password"] {
     width: 400px;
 }
@@ -88,7 +114,7 @@
     .contenedor-login h2{
         font-size: 60px;
      }
-    .contenedor-formulario form input[type="text"],
+    .contenedor-formulario form input[type="email"],
 .contenedor-formulario form input[type="password"] {
     width: 450px;
 }
