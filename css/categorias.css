@@ -8,6 +8,7 @@
 
 .seccion-1 {
   width: 95%;
+  margin: auto;
   height: 250px;
   display: flex;
   align-items: end;

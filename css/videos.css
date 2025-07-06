@@ -268,16 +268,16 @@
 /* MEDIAQUERYS PARA LAPTOPS */
 
 @media (min-width: 1024px) {
-  .video-info {
-    width: 10%;
-  }
-
   .cortos-contenedor {
     justify-content: start;
   }
 
   video {
     width: 95%;
+  }
+
+  .video-info {
+    width: 10%;
   }
 
   .video-info-2 {
@@ -341,12 +341,12 @@
     }
   }
 
-  .video-info {
-    width: 7%;
-  }
-
   .cortos {
     width: 17vw !important;
+  }
+
+  .video-info {
+    width: 7%;
   }
 
   .video-info-2 {
