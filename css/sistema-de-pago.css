@@ -232,6 +232,7 @@ input:focus {
   padding: 20px;
   background-color: #202020;
   border-radius: 10px;
+  z-index: 2;
 
   .pago-imagen {
     display: flex;

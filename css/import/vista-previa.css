@@ -56,7 +56,7 @@
 .categorias:hover :is(.vista-previa) {
   display: flex;
   border-radius: 5px;
-  height: 230px;
+  height: 190px;
   video {
     width: 100%;
     object-fit: cover;
@@ -166,6 +166,10 @@
 @media (min-width: 1024px) {
   .video_miniatura:hover :is(.vista-previa) {
     height: 100%;
+  }
+
+  .categorias:hover :is(.vista-previa) {
+    height: 230px;
   }
 }
 
