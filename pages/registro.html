@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Login</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/index.css">
 
     <!-- METADATOS GENERALES -->
     <meta
@@ -298,14 +297,41 @@
         <section class="contenedor-login">
           <article class="login">
             <div class="contenedor-formulario">
-              <h2>Iniciar Sesión</h2>
+              <h2>Registrarme</h2>
               <form action="" class="formulario">
-                <input type="text" value="Ingresar con Google"/>
-                <input type="text" value="Ingresar con Outlook"/>
-                <input type="text" value="Ingresar con Yahoo"/>
-                <input type="submit" value="Registrar" />
+                <input
+                  type="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  maxlength="30"
+                  placeholder="Ingrese su Email"
+                  required
+                />
+                <input
+                  type="password"
+                  minlength="6"
+                  maxlength="45"
+                  placeholder="Crear contraseña"
+                  required
+                />
+                <input type="submit" value="Entrar" />
               </form>
+              <div class="redes-sociales">
+                <div class="iconos">
+                  <a href="#"
+                    ><img
+                      class="google"
+                      src="../icons/google.png"
+                      alt="imagen-google"
+                    />
+                  </a>
+                  <a href="#"
+                    ><img src="../icons/facebook.png" alt="imagen-facebook"
+                  /></a>
+                </div>
+              </div>
+              <span>Ya tienes cuenta?<a href="./login.html">Inicio.</a></span>
             </div>
+          </article>
         </section>
       </main>
     </div>
