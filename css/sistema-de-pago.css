@@ -2,6 +2,10 @@
 @import "./import/aside.css";
 @import "./import/navbar.css";
 
+.contenedor-principal {
+  overflow: hidden;
+}
+
 .seccion-1 {
   width: 100%;
   height: 80vh;
@@ -10,14 +14,19 @@
   justify-content: center;
   align-items: start;
   position: relative;
+}
 
-  .imagen-de-fondo {
-    position: absolute;
-    z-index: -1;
-    opacity: 5%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imagen-de-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  opacity: 5%;
+  object-fit: cover;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.005);
   }
 }
 
@@ -31,6 +40,7 @@
   background-color: #121212;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .contenedor-pago_suscripcion {
