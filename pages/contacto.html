@@ -361,19 +361,22 @@
             </div>
 
             <div class="mb-3">
-              <label for="comentario" class="form-label"
+              <label for="comentario" class="form-label" class="comentario-1"
                 >Escribe un comentario</label
               >
               <textarea
                 class="form-control"
+                minlength="10"
+                maxlength="250"
                 id="comentario"
                 name="comentario"
                 rows="3"
+                placeholder="Ingrese su Comentario"
                 required
               ></textarea>
-              <div class="valid-feedback">Comentario Enviado</div>
+              <div class="valid-feedback">Muy Bien</div>
               <div class="invalid-feedback">
-                Por favor, escriba un comentario.
+                Por favor, escriba un comentario. Minimo 10 caracteres.
               </div>
             </div>
 
