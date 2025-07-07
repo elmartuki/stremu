@@ -211,7 +211,7 @@
     padding: 5px 20px;
 
     .categorias {
-      width: 18vh;
+      width: 14vh;
     }
   }
 }
@@ -258,6 +258,7 @@
     .categorias-contenedor_frecuentes {
       width: 100%;
       padding: 0px;
+      justify-content: center;
     }
   }
 }
@@ -265,10 +266,6 @@
 @media (min-width: 1440px) {
   .seccion-2_categorias {
     justify-content: center;
-
-    .categorias-contenedor_frecuentes {
-      justify-content: center;
-    }
   }
 
   .videos-destacados-contenedor {
