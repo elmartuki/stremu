@@ -6,16 +6,6 @@
 @import "./import/cortos-contenedor.css";
 @import "./videos.css";
 
-.video {
-  .video_miniatura {
-    height: 26vh !important;
-  }
-
-  .vista-previa {
-    height: 26vh !important;
-  }
-}
-
 .video_descripcion-contenedor {
   h4 {
     font-size: 0.9rem;
@@ -36,13 +26,32 @@
       margin-bottom: 10px;
     }
   }
-  .video {
-    .video_miniatura {
-      height: 22vh !important;
-    }
 
-    .vista-previa {
-      height: 22vh !important;
+  .videos-relacionados {
+    .video {
+      .video_miniatura-img {
+        width: 100%;
+        height: 140px;
+        border-radius: 10px;
+
+        .videos_miniatura-img {
+          height: 100%;
+        }
+
+        .vista-previa {
+          height: 100px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .videos-relacionados {
+    .video {
+      .video_miniatura-img {
+        height: 190px;
+      }
     }
   }
 }

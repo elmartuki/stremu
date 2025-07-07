@@ -163,6 +163,24 @@
   }
 }
 
+.video_miniatura:hover :is(.video_miniatura-img, p) {
+  display: none;
+}
+
+.video_miniatura:hover :is(.vista-previa) {
+  display: flex;
+  border-radius: 5px;
+  video {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: miniatura 5s ease-in 1;
+    border-bottom-left-radius: 5px;
+  }
+}
+
 @media (min-width: 1024px) {
   .video_miniatura:hover :is(.vista-previa) {
     height: 100%;
@@ -170,6 +188,28 @@
 
   .categorias:hover :is(.vista-previa) {
     height: 230px;
+  }
+
+  .videos-relacionados {
+    .video {
+      .video_miniatura:hover :is(.vista-previa) {
+        video {
+          height: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .videos-relacionados {
+    .video {
+      .video_miniatura:hover :is(.vista-previa) {
+        video {
+          height: 190px;
+        }
+      }
+    }
   }
 }
 
