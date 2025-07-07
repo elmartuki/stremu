@@ -1,6 +1,7 @@
 @import "./import/aside.css";
 @import "./import/navbar.css";
 @import "./import/general.css";
+@import "./import/footer.css";
 
 .seccion-1 {
   width: 100%;
