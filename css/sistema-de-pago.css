@@ -233,6 +233,7 @@ input:focus {
   background-color: #202020;
   border-radius: 10px;
   z-index: 2;
+  animation: rgb 5s linear 1;
 
   .pago-imagen {
     display: flex;
@@ -262,6 +263,74 @@ input:focus {
         background-color: #c44b00;
       }
     }
+  }
+}
+
+.animacion-pago {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+  animation: animacion-pago 5s linear 1 forwards;
+}
+
+.carita {
+  animation: carita 5s linear 1 forwards;
+}
+
+@keyframes animacion-pago {
+  0% {
+    background-color: black;
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes rgb {
+  0% {
+    border: 2px solid #ff6200;
+    box-shadow: 0 0 10px 10px #ff620062;
+  }
+
+  50% {
+    border: 2px solid rgb(233, 238, 130);
+    box-shadow: 0 0 10px 10px rgba(233, 238, 130, 0.477);
+  }
+
+  50% {
+    border: 2px solid rgb(238, 130, 175);
+    box-shadow: 0 0 10px 10px rgba(238, 130, 175, 0.54);
+  }
+
+  75% {
+    border: 2px solid rgb(130, 144, 238);
+    box-shadow: 0 0 10px 10px rgba(130, 144, 238, 0.475);
+  }
+
+  100% {
+    border: 2px solid violet;
+    box-shadow: 0 0 10px 10px rgba(238, 130, 238, 0.496);
+  }
+}
+
+@keyframes carita {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
