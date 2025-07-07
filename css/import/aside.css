@@ -168,12 +168,13 @@ aside {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .aside-contenedor {
     width: 20%;
   }
 
   main {
     width: 80%;
+    flex-direction: column;
   }
 }

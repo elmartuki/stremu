@@ -221,13 +221,6 @@
 
 .video {
   width: 90vw;
-  .video_miniatura {
-    height: 23vh !important;
-  }
-
-  .vista-previa {
-    height: 23vh !important;
-  }
 }
 
 /* MEDIAQUERYS PARA TABLES */
@@ -257,13 +250,6 @@
   }
 
   .video {
-    .video_miniatura {
-      height: 28vh !important;
-    }
-
-    .vista-previa {
-      height: 28vh !important;
-    }
   }
 }
 
@@ -334,12 +320,6 @@
   .cortos-contenedor {
     .cortos {
       width: 11vw !important;
-    }
-  }
-
-  .video {
-    .video_miniatura {
-      height: 26vh;
     }
   }
 
