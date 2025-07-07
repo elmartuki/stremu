@@ -26,8 +26,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  overflow: hidden;
-  padding-bottom: 350px;
 }
 .contenedor {
   width: 100%;
