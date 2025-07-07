@@ -2,7 +2,6 @@ footer {
   width: 100%;
   margin-top: 50px;
   background: #151515;
-  border-top-left-radius: 10px;
 }
 .contenedor-footer {
   display: flex;
@@ -41,7 +40,48 @@ footer {
   border-radius: 5px;
 }
 
+.box-footer :is(.about-footer, .Redes_sociales) {
+  h2 {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  a {
+    transition: 0.5s;
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
+
+  a {
+    img {
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.3);
+        filter: invert();
+        background-color: #000000;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.box2-footer {
+  div {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 @media (min-width: 1024px) {
+  footer {
+    border-top-left-radius: 10px;
+  }
+
   .box-footer {
     display: flex;
     flex-direction: row;
