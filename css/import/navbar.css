@@ -1,3 +1,5 @@
+@import "./aside.css";
+
 /* NAVBAR */
 
 header {
@@ -57,7 +59,11 @@ nav.navbar.navbar-expand-lg {
       display: flex;
       gap: 6px;
       font-size: 1.2rem;
+      padding: 5px 10px;
+      border-radius: 10px;
+      background-color: #3c3c3c34;
     }
+
     img {
       gap: 50px;
       filter: invert();
