@@ -41,6 +41,12 @@ section {
   height: auto;
   border-radius: 15px;
   border: 2px solid rgb(255, 255, 255);
+
+  .img {
+    img {
+      object-position: 20% 0%;
+    }
+  }
 }
 .contenedor .img img {
   width: 100%;
@@ -88,6 +94,11 @@ section {
     padding: 0px 30px;
     text-decoration: none;
     color: white;
+
+    img {
+      width: 25px;
+      filter: invert();
+    }
   }
   &:hover {
     background-color: #ff4600;
