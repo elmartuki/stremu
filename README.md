@@ -1,64 +1,60 @@
-DEMO: https://stremu.netlify.app/
+```markdown
+# 🎮 StremuGames - Backend
 
-
-# 🎮 StremuGames
-
-Bienvenido al repositorio de **StremuGames**.
-
-> **🚀 Ver Proyecto Online:** [https://stremugames.vercel.app/](https://stremugames.vercel.app/)
+Guía para configurar y levantar el servidor (Backend) del proyecto.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🚀 Instalación y Ejecución
 
-El proyecto está organizado en dos carpetas principales dentro de la raíz:
+Sigue estos pasos en tu terminal:
 
-* `back/`: Código del servidor (API, Base de Datos).
-* `front/`: Código del cliente (React/Vite).
+### 1️⃣ Navegar a la carpeta
+
+Accede al directorio del backend:
+
+```bash
+cd back
+```
 
 ---
 
-## 🛠️ Guía de Instalación Local
+### 2️⃣ Configurar Variables de Entorno
 
-Sigue estos pasos para levantar el proyecto en tu computadora.
+Busca el archivo `.env.example` y cámbiale el nombre a `.env`.
 
-### 1️⃣ Configuración del Frontend
+---
 
-1.  **Navegar a la carpeta:**
-    Abre tu terminal y entra en el directorio del frontend:
-    ```bash
-    cd front
-    ```
+### 3️⃣ Instalar Dependencias
 
-2.  **Configurar Variables de Entorno:**
-    Busca el archivo `.env.example` y cámbiale el nombre a `.env`.
+Ejecuta el siguiente comando para instalar las librerías:
 
-3.  **Instalar Dependencias:**
-    Ejecuta el siguiente comando para descargar las librerías necesarias:
-    ```bash
-    npm i
-    ```
+```bash
+npm install
+```
 
-4.  **Iniciar el Proyecto:**
-    Levanta la aplicación en modo desarrollo:
-    ```bash
-    npm run dev
-    ```
+---
 
-### 2️⃣ Configuración del Backend
+### 4️⃣ Iniciar el Servidor
 
-Para que la aplicación funcione completa (login, base de datos), también debes levantar el servidor en una **nueva terminal**:
+Levanta el servidor en modo desarrollo:
 
-1.  **Navegar a la carpeta:**
-    ```bash
-    cd back
-    ```
+```bash
+npm run dev
+```
 
-2.  **Configurar Variables de Entorno:**
-    Renombra el archivo `.env.example` a `.env` y configura tus credenciales.
+---
 
-3.  **Instalar y Ejecutar:**
-    ```bash
-    npm i
-    npm run dev
-    ```
+## ✅ Requisitos
+
+- Node.js instalado  
+- npm instalado  
+- Archivo `.env` correctamente configurado  
+
+---
+
+## 📌 Notas
+
+- El servidor se ejecutará en el puerto configurado en el archivo `.env`.
+- Asegúrate de tener la base de datos en funcionamiento antes de iniciar el servidor.
+```
